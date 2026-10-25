@@ -14,6 +14,6 @@ or upload the zip with Elayne already installed, then activate **Elayne Legal**.
 
 ## Notes
 
-- Pattern slugs stay `elayne/legal-*` and the text domain stays `elayne`, so the patterns are drop-in replacements for the ones still bundled in the parent. The child's patterns win while both exist.
+- Pattern slugs stay `elayne/legal-*`, so the patterns are drop-in replacements for the ones still bundled in the parent. The child's patterns win while both exist. Strings use the `elayne-legal` text domain.
 - Images shared across verticals (avatars, icons) are loaded from the parent; legal-only images live in `patterns/images/legal/`.
 - Prototypes for new designs live in the private `elayne-content` repo.

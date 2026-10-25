@@ -1,0 +1,30 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## What this is
+
+Elayne Legal is a WordPress block (FSE) **child theme** of [Elayne](https://github.com/imagewize/elayne) for law firms (`Template: elayne` in `style.css`). It has no `theme.json`, templates or build step: everything comes from the parent, plus block patterns, two template parts, two style variations, small CSS/JS assets and `functions.php`. Version 0.1.0 is unreleased; the GitHub repo and Packagist entry are created at v1.0.0.
+
+`docs/STATUS.md` holds the prototype-vs-pattern map and the remaining to-do list (home page composite, CTA strip, ticker, departments, offices, expertise band, reviews). Read it before starting design work. Design prototypes live in the private `~/Documents/elayne-content/legal-corporate/` repo. Update `CHANGELOG.md` (Keep a Changelog, `[Unreleased]`) when adding features.
+
+## Commands
+
+- `composer check` runs `pt-cli check patterns/ --theme=elayne`, the Elayne pattern compliance checker (the "Pass 1/2/3" referred to in STATUS). It needs `composer install` first (pt-cli is a dev dependency, installed to `vendor/`). STATUS notes it historically ran from the Elayne repo.
+- No test suite, linter config or JS build exists. To see changes, activate the theme in a WordPress site with Elayne installed and open the Site Editor.
+
+## Architecture
+
+- **Patterns** (`patterns/*.php`): the main content. Each file has a WP pattern header (`Slug: elayne/legal-*`, categories `elayne/legal`, `Block Types`, etc.) followed by serialized block markup with `esc_html_e( ..., 'elayne-legal' )` strings. Block comment JSON and the rendered HTML must stay in sync or the editor flags the block as invalid. Slugs deliberately keep the `elayne/legal-*` namespace so they replace the copies still bundled in the parent, and the child's win while both exist. Legal-only images go in `patterns/images/legal/`; shared avatars/icons are loaded from the parent.
+- **Template parts** (`parts/header.html`, `parts/footer.html`): thin wrappers that reference the Legal Corporate header/footer patterns. Parts the child does not ship fall back to the parent.
+- **Style variations** (`styles/legal-corporate.json`, `styles/legal-blue.json`): Legal Corporate uses Source Serif 4 headings, Open Sans body and a navy/gold palette. Fonts are bundled in `assets/fonts/`.
+- **`functions.php`** (namespace `ElayneLegal`):
+  - Registers `core/group` block styles `legal-corporate-hero` and `legal-practice-areas`, and loads each stylesheet from `assets/styles/block-styles/{name}.css` on demand via `wp_enqueue_block_style`. Header and footer CSS are enqueued the same way but without a registered style, because those patterns scope their own selectors (class `legal-corporate-header` / `legal-corporate-footer`). A new section's CSS follows this pattern.
+  - `render_block` hook enqueues `assets/js/legal-practice-filter.js` only when a group with `is-style-legal-practice-areas` renders.
+  - `render_block_data` hook rewrites `"theme":"elayne"` on `core/template-part` blocks to the active stylesheet. Parent templates hard-code that attribute (its checker requires it), and without the rewrite a child theme's parts render as unavailable. Re-test after each Elayne release.
+- **Text domain**: everything (functions and all patterns) uses `elayne-legal`; keep it that way in new patterns.
+- **Known checker gap**: `pt-cli check` passes `wp:image` blocks with `width` but no `;height:auto` in the `<img style>`, which the editor rejects (imagewize/pt-cli#16). Add `height:auto` by hand until that rule exists.
+
+## Release packaging
+
+`.distignore` and `.gitattributes` exclude `docs/`, `composer.json`, README, dotfiles and dev files from the release zip and source archives. Keep new dev-only files listed in both.
