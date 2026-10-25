@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/logos/elayne-legal-scales-dark.svg">
-    <img src="assets/logos/elayne-legal-scales-light.svg" alt="Elayne Legal logo" width="128" height="128">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logos/elayne-legal-gavel-dark.svg">
+    <img src="assets/logos/elayne-legal-gavel-light.svg" alt="Elayne Legal logo" width="128" height="128">
   </picture>
 </p>
 
@@ -29,4 +29,4 @@ or upload the zip with Elayne already installed, then activate **Elayne Legal**.
 
 GNU GPL v3 (or later). See `LICENSE.md`.
 
-The scales-of-justice icon in `assets/logos/` is the [Codicons](https://github.com/microsoft/vscode-codicons) `law` icon by Microsoft, obtained via [Blade Icons](https://blade-ui-kit.com/blade-icons/codicon-law) and licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). It is recoloured (navy for light mode, white for dark mode).
+The gavel icon in `assets/logos/` is the [EOS Icons](https://eos-icons.com/) `gavel` icon by SUSE, obtained via [Blade Icons](https://blade-ui-kit.com/blade-icons/eos-gavel) and licensed under [MIT](https://opensource.org/licenses/MIT). It is recoloured (navy for light mode, white for dark mode).
