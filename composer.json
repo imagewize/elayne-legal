@@ -1,0 +1,22 @@
+{
+	"name": "imagewize/elayne-legal",
+	"description": "Child theme of Elayne for law firms: Legal Corporate and Legal Blue style variations, two-bar header, hero with enquiry form and filterable practice areas.",
+	"type": "wordpress-theme",
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Jasper Frumau",
+			"email": "jasper@imagewize.com"
+		}
+	],
+	"require": {
+		"php": ">=8.0",
+		"imagewize/elayne": "*"
+	},
+	"require-dev": {
+		"imagewize/pt-cli": "^2.0"
+	},
+	"scripts": {
+		"check": "@php ./vendor/bin/pt-cli check patterns/ --theme=elayne"
+	}
+}

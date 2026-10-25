@@ -1,0 +1,70 @@
+/* Legal Corporate header: utility bar links, sticky main bar, monogram brand mark.
+   Loaded via wp_enqueue_block_style on core/group; selectors are scoped to
+   .legal-corporate-header so they are inert on other sites. */
+
+.legal-corporate-header {
+	position: sticky;
+	top: 0;
+	z-index: 30;
+}
+
+.legal-corporate-header .legal-corporate-utility {
+	letter-spacing: 0.02em;
+}
+
+.legal-corporate-header .legal-corporate-utility a {
+	text-decoration: none;
+	margin-right: 1.25rem;
+}
+
+.legal-corporate-header .legal-corporate-utility a:hover {
+	color: var(--wp--preset--color--base);
+}
+
+.legal-corporate-header .legal-corporate-brand-mark {
+	box-sizing: border-box;
+	display: grid;
+	place-items: center;
+	width: 2.1rem;
+	height: 2.1rem;
+	margin: 0;
+	border: 1.5px solid var(--wp--preset--color--primary);
+	border-radius: 2px;
+	font-family: var(--wp--preset--font-family--serif);
+	font-weight: 600;
+	line-height: 1;
+}
+
+.legal-corporate-header .wp-block-site-title {
+	font-family: var(--wp--preset--font-family--serif);
+	font-size: 1.05rem;
+	font-weight: 600;
+	line-height: 1.1;
+	color: var(--wp--preset--color--primary);
+}
+
+.legal-corporate-header .legal-corporate-tagline {
+	margin: 0.2rem 0 0;
+	font-size: 0.6rem;
+	font-weight: 500;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+
+.legal-corporate-header .wp-block-navigation a {
+	font-weight: 500;
+}
+
+.legal-corporate-header .legal-corporate-header-cta .wp-block-button__link:hover {
+	background-color: #7f6424 !important;
+}
+
+/* No block-gap strip between the utility bar and the main bar */
+.legal-corporate-header.legal-corporate-header > * {
+	margin-block-start: 0;
+}
+
+.legal-corporate-header .legal-corporate-header-cta .wp-block-button__link {
+	font-family: var(--wp--preset--font-family--open-sans);
+}

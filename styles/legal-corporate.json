@@ -1,0 +1,271 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Legal Corporate",
+	"settings": {
+		"color": {
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"duotone": [
+				{
+					"name": "Navy",
+					"slug": "primary",
+					"colors": [
+						"#12233F",
+						"#F7F5F0"
+					]
+				},
+				{
+					"name": "Gold",
+					"slug": "secondary",
+					"colors": [
+						"#9A7B2F",
+						"#F7F5F0"
+					]
+				},
+				{
+					"name": "High Contrast",
+					"slug": "high-contrast",
+					"colors": [
+						"#000000",
+						"#ffffff"
+					]
+				}
+			],
+			"gradients": [
+				{
+					"name": "Navy",
+					"slug": "navy",
+					"gradient": "linear-gradient(135deg, #12233F, #0B1628)"
+				},
+				{
+					"name": "Gold Shine",
+					"slug": "gold-shine",
+					"gradient": "linear-gradient(135deg, #9A7B2F, #C9A85A)"
+				}
+			],
+			"palette": [
+				{
+					"name": "Brand",
+					"slug": "primary",
+					"color": "#12233F"
+				},
+				{
+					"name": "Brand Accent",
+					"slug": "primary-accent",
+					"color": "#C9A85A"
+				},
+				{
+					"name": "Brand Alt",
+					"slug": "primary-alt",
+					"color": "#0B1628"
+				},
+				{
+					"name": "Brand Alt Accent",
+					"slug": "primary-alt-accent",
+					"color": "#9A7B2F"
+				},
+				{
+					"name": "Contrast",
+					"slug": "main",
+					"color": "#1B2433"
+				},
+				{
+					"name": "Contrast Accent",
+					"slug": "main-accent",
+					"color": "#5A6475"
+				},
+				{
+					"name": "Base",
+					"slug": "base",
+					"color": "#FFFFFF"
+				},
+				{
+					"name": "Base Accent",
+					"slug": "secondary",
+					"color": "#F7F5F0"
+				},
+				{
+					"name": "Tint",
+					"slug": "tertiary",
+					"color": "#EFEBE0"
+				},
+				{
+					"name": "Border Light",
+					"slug": "border-light",
+					"color": "#E9E5DA"
+				},
+				{
+					"name": "Border Dark",
+					"slug": "border-dark",
+					"color": "#DCD7CB"
+				},
+				{
+					"name": "Orange",
+					"slug": "orange",
+					"color": "#E65C00"
+				},
+				{
+					"name": "Orange Light",
+					"slug": "orange-light",
+					"color": "#F5A623"
+				}
+			]
+		},
+		"typography": {
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "Mona Sans, sans-serif",
+					"name": "Mona Sans",
+					"slug": "primary",
+					"fontFace": [
+						{
+							"fontDisplay": "block",
+							"fontFamily": "Mona Sans",
+							"fontStretch": "75% 125%",
+							"fontStyle": "normal",
+							"fontWeight": "300 900",
+							"src": [
+								"file:./assets/fonts/mona-sans/Mona-Sans.woff2"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "Open Sans, sans-serif",
+					"name": "Open Sans",
+					"slug": "open-sans",
+					"fontFace": [
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Open Sans",
+							"fontStyle": "normal",
+							"fontWeight": "300 800",
+							"src": [
+								"file:./assets/fonts/Open-Sans.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Open Sans",
+							"fontStyle": "italic",
+							"fontWeight": "300 800",
+							"src": [
+								"file:./assets/fonts/Open-Sans-Italic.woff2"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+					"name": "Source Serif 4",
+					"slug": "serif",
+					"fontFace": [
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Source Serif 4",
+							"fontStyle": "normal",
+							"fontWeight": "400 700",
+							"src": [
+								"file:./assets/fonts/source-serif-4/SourceSerif4-VariableFont.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Source Serif 4",
+							"fontStyle": "italic",
+							"fontWeight": "400 700",
+							"src": [
+								"file:./assets/fonts/source-serif-4/SourceSerif4-Italic-VariableFont.woff2"
+							]
+						}
+					]
+				}
+			],
+			"fontSizes": [
+				{
+					"name": "XX Small",
+					"size": "0.75rem",
+					"slug": "xx-small"
+				},
+				{
+					"name": "X Small",
+					"size": "0.8125rem",
+					"slug": "x-small"
+				},
+				{
+					"name": "Small",
+					"size": "0.875rem",
+					"slug": "small"
+				},
+				{
+					"name": "Base",
+					"size": "0.9375rem",
+					"slug": "base"
+				},
+				{
+					"name": "Medium",
+					"size": "1.875rem",
+					"slug": "medium",
+					"fluid": {
+						"min": "1.5rem",
+						"max": "1.875rem"
+					}
+				},
+				{
+					"name": "Large",
+					"size": "2.75rem",
+					"slug": "large",
+					"fluid": {
+						"min": "1.9rem",
+						"max": "2.75rem"
+					}
+				}
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var:preset|color|secondary",
+			"text": "var:preset|color|main"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|open-sans",
+			"fontSize": "var:preset|font-size|base",
+			"lineHeight": "1.6"
+		},
+		"elements": {
+			"heading": {
+				"color": {
+					"text": "var:preset|color|primary"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|serif",
+					"fontWeight": "600",
+					"lineHeight": "1.2"
+				}
+			},
+			"button": {
+				"border": {
+					"radius": "var:preset|border-radius|sm",
+					"width": "0"
+				},
+				"color": {
+					"background": "var:preset|color|primary-alt-accent",
+					"text": "var:preset|color|base"
+				},
+				"typography": {
+					"fontWeight": "600"
+				},
+				":hover": {
+					"color": {
+						"background": "var:preset|color|primary-alt",
+						"text": "var:preset|color|base"
+					}
+				}
+			}
+		}
+	}
+}

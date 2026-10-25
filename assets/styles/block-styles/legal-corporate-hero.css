@@ -1,0 +1,80 @@
+/* legal-corporate-hero.css — Legal Corporate hero with enquiry form. Scoped to .is-style-legal-corporate-hero. */
+
+/* Faint vertical rules over the navy background */
+.is-style-legal-corporate-hero {
+	position: relative;
+	overflow: hidden;
+	background-image: repeating-linear-gradient(90deg, transparent 0 79px, rgba(255, 255, 255, 0.035) 79px 80px);
+}
+
+/* Emphasised word in the H1 */
+.is-style-legal-corporate-hero h1 em {
+	font-style: italic;
+	font-weight: 500;
+	color: var(--wp--preset--color--primary-accent);
+}
+
+/* Heading colour comes from the global heading rule; keep it light on navy */
+.is-style-legal-corporate-hero h1 {
+	color: var(--wp--preset--color--base);
+}
+
+/* Eyebrow label */
+.is-style-legal-corporate-hero .legal-hero-eyebrow {
+	text-transform: uppercase;
+	letter-spacing: 0.16em;
+	font-weight: 600;
+}
+
+/* Stats strip */
+.is-style-legal-corporate-hero .legal-hero-stats {
+	border-top: 1px solid rgba(255, 255, 255, 0.16);
+	padding-top: var(--wp--preset--spacing--small);
+}
+
+.is-style-legal-corporate-hero .legal-hero-stat-number {
+	font-family: var(--wp--preset--font-family--serif);
+	font-weight: 600;
+	line-height: 1;
+	margin: 0;
+}
+
+.is-style-legal-corporate-hero .legal-hero-stat-label {
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	margin: 0;
+}
+
+/* Enquiry card */
+.is-style-legal-corporate-hero .legal-hero-form-card {
+	border-top: 3px solid var(--wp--preset--color--primary-alt-accent);
+	box-shadow: 0 24px 48px -20px rgba(0, 0, 0, 0.5);
+}
+
+.is-style-legal-corporate-hero .legal-hero-form-card h2 {
+	color: var(--wp--preset--color--primary);
+}
+
+/* Full-width submit button in the card */
+.is-style-legal-corporate-hero .legal-hero-form-card .wp-block-buttons,
+.is-style-legal-corporate-hero .legal-hero-form-card .wp-block-button,
+.is-style-legal-corporate-hero .legal-hero-form-card .wp-block-button__link {
+	width: 100%;
+	text-align: center;
+}
+
+/* Contact Form 7 fields inside the card */
+.is-style-legal-corporate-hero .legal-hero-form-card .wpcf7-form input:not([type="submit"]),
+.is-style-legal-corporate-hero .legal-hero-form-card .wpcf7-form select,
+.is-style-legal-corporate-hero .legal-hero-form-card .wpcf7-form textarea {
+	width: 100%;
+	background: var(--wp--preset--color--secondary);
+	border: 1px solid var(--wp--preset--color--border-light);
+	border-radius: var(--wp--preset--border-radius--sm);
+	padding: 0.6rem 0.75rem;
+}
+
+.is-style-legal-corporate-hero .legal-hero-form-card .wpcf7-form input[type="submit"] {
+	width: 100%;
+	cursor: pointer;
+}
