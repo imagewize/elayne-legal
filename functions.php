@@ -77,3 +77,26 @@ function enqueue_practice_filter( $block_content, $block ) {
 	return $block_content;
 }
 add_filter( 'render_block', __NAMESPACE__ . '\enqueue_practice_filter', 10, 2 );
+
+/**
+ * Point the parent's template-part references at this theme.
+ *
+ * Elayne's template patterns hard-code `"theme":"elayne"` on their
+ * template-part blocks (its compliance checker requires the attribute).
+ * WordPress only resolves a part from the theme files when that attribute
+ * equals the active stylesheet, so under a child theme every part would render
+ * as unavailable and the child's own parts/header.html would never be reached.
+ * Rewrite the attribute at render time; parts the child does not ship fall
+ * back to the parent's files.
+ *
+ * @param array $parsed_block The block being rendered.
+ * @return array Block with the theme attribute retargeted.
+ */
+function retarget_template_parts( $parsed_block ) {
+	if ( 'core/template-part' === $parsed_block['blockName'] && get_template() === ( $parsed_block['attrs']['theme'] ?? '' ) ) {
+		$parsed_block['attrs']['theme'] = get_stylesheet();
+	}
+
+	return $parsed_block;
+}
+add_filter( 'render_block_data', __NAMESPACE__ . '\\retarget_template_parts' );
