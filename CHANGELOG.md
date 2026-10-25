@@ -12,10 +12,12 @@ All notable changes to Elayne Legal are documented here. The format follows
 - Header nav links get the gold underline on hover.
 
 ### Fixed
+- Header brand (mark, site name and tagline) links to the home page.
 - Header nav links showed a double underline (the current-page text underline plus the gold border); only the gold line remains.
 - Header is now sticky: the template-part wrapper sticks, since the inner header was as tall as its parent and could not (offset for the admin bar).
 
 ### Changed
+- About intro and team patterns restyled to Legal Corporate (eyebrow, serif headings, bordered cards); the about intro no longer has its own banner and H1, so the page header is the only one.
 - Buttons match the prototype: 4px radius, `.7rem 1.25rem` padding, sentence-case Explore buttons in departments and CTA strip.
 - CTA strip is now a dark gold band with a white heading and one white "Book free consultation" button with an arrow.
 - Button hovers redefine the preset colour variables instead of using `!important`.

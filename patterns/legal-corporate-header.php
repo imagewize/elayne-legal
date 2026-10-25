@@ -26,13 +26,13 @@
 
 <!-- wp:group {"metadata":{"name":"Main Bar"},"align":"full","className":"legal-corporate-main-bar","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"border":{"bottom":{"color":"var:preset|color|border-dark","width":"1px"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull legal-corporate-main-bar has-base-background-color has-background" style="border-bottom-color:var(--wp--preset--color--border-dark);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
-<div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"className":"legal-corporate-brand-mark","textColor":"primary","fontSize":"small"} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"className":"legal-corporate-brand","style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+<div class="wp-block-group legal-corporate-brand"><!-- wp:paragraph {"className":"legal-corporate-brand-mark","textColor":"primary","fontSize":"small"} -->
 <p class="legal-corporate-brand-mark has-primary-color has-text-color has-small-font-size"><?php esc_html_e( 'AM', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"className":"legal-corporate-brand-name","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group legal-corporate-brand-name"><!-- wp:site-title {"level":0,"isLink":false} /-->
+<div class="wp-block-group legal-corporate-brand-name"><!-- wp:site-title {"level":0} /-->
 
 <!-- wp:paragraph {"className":"legal-corporate-tagline","textColor":"main-accent","fontSize":"xx-small"} -->
 <p class="legal-corporate-tagline has-main-accent-color has-text-color has-xx-small-font-size"><?php echo esc_html_x( 'Attorneys & Notaries', 'law firm tagline', 'elayne-legal' ); ?></p>
