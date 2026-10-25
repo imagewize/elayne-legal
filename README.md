@@ -7,22 +7,48 @@
 
 # Elayne Legal
 
-Child theme of [Elayne](https://github.com/imagewize/elayne) for law firms.
+**A complete law-firm website, built from blocks.** Elayne Legal is a child theme of [Elayne](https://github.com/imagewize/elayne) with a navy and gold design, serif headings and the sections a practice actually needs: from the enquiry form in the hero to the offices and the disclaimer in the footer.
 
-- Style variations: Legal Corporate (Source Serif 4, compact scale), Legal Blue
-- Patterns: two-bar header, hero with enquiry form, filterable practice areas, services, team, stats, testimonials, about, contact
-- Requires the Elayne parent theme
+![Elayne Legal home page](screenshot.jpg)
+
+No page builder, no build step, no stock photos to license. Insert a page pattern, edit the text in the Site Editor and publish.
+
+## What's inside
+
+| Section | What it does |
+|---|---|
+| Two-bar header | Utility bar with phone and email, then a sticky main bar with menu and call-to-action |
+| Hero with enquiry form | Headline, key figures and a free-consultation card (Contact Form 7 when active, placeholder fields otherwise) |
+| Services ticker | A scrolling strip of services, editable as a plain list |
+| Practice areas | Tabs and a location filter; the small script loads only when the section is on the page |
+| Departments, expertise band, offices | "What we do" cards, a navy feature band, and a map panel with office cards |
+| Reviews, team, stats, contact | Social proof and detail sections in the same style |
+| CTA strip and footer | Gold call-to-action band and a three-column footer with disclaimer bar |
+| **Page patterns** | Home, About, Services and Contact, assembled from the sections above under a shared navy page header |
+
+## Style variations
+
+- **Legal Corporate** - navy and gold, Source Serif 4 headings, Open Sans body, compact type scale (fonts bundled, no external requests)
+- **Legal Blue** - a professional navy blue and gold palette
+
+Switch in **Appearance → Editor → Styles**.
 
 ## Install
 
+Elayne must be installed first.
+
     composer require imagewize/elayne-legal
 
-or upload the zip with Elayne already installed, then activate **Elayne Legal**.
+or upload the zip under **Appearance → Themes → Add New**, then activate **Elayne Legal** and pick a style. Add a page and insert one of the Legal page patterns.
+
+Requires WordPress 7.0+, PHP 8.0+ and the Elayne parent theme.
 
 ## Notes
 
 - Pattern slugs stay `elayne/legal-*`, so the patterns are drop-in replacements for the ones still bundled in the parent. The child's patterns win while both exist. Strings use the `elayne-legal` text domain.
 - Images shared across verticals (avatars, icons) are loaded from the parent; legal-only images live in `patterns/images/legal/`.
+- Photos are not bundled. Add your own, for example as the background of the expertise band or the team portraits.
+- Development: `composer check` runs the Elayne pattern compliance checker; see `CLAUDE.md` for the sentinel editor validation.
 - Prototypes for new designs live in the private `elayne-content` repo.
 
 ## License

@@ -117,23 +117,6 @@
 			"fluid": true,
 			"fontFamilies": [
 				{
-					"fontFamily": "Mona Sans, sans-serif",
-					"name": "Mona Sans",
-					"slug": "primary",
-					"fontFace": [
-						{
-							"fontDisplay": "block",
-							"fontFamily": "Mona Sans",
-							"fontStretch": "75% 125%",
-							"fontStyle": "normal",
-							"fontWeight": "300 900",
-							"src": [
-								"file:./assets/fonts/mona-sans/Mona-Sans.woff2"
-							]
-						}
-					]
-				},
-				{
 					"fontFamily": "Open Sans, sans-serif",
 					"name": "Open Sans",
 					"slug": "open-sans",

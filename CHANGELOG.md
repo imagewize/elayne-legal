@@ -17,6 +17,8 @@ All notable changes to Elayne Legal are documented here. The format follows
 - Only the white main bar of the header is sticky (offset for the admin bar); the utility bar scrolls away. The header wrappers use `display: contents` so the bar can stick against the page, which the header element's own box could not do.
 
 ### Changed
+- Removed the unused `legal-services` card grid and the Mona Sans font file; the variation inherits Mona Sans from Elayne.
+- README rewritten, `readme.txt` and `screenshot.jpg` added.
 - Header bars use the same 1200px container as the page sections, so the logo lines up with the content.
 - `legal-stats` is now a navy band with gold serif figures and a gold rule, and `legal-contact` a short intro with an email button beside four detail cards (phone, email, office, hours). Both use the Legal Corporate eyebrow and serif headings; the contact pattern no longer needs parent icon images.
 - About intro and team patterns restyled to Legal Corporate (eyebrow, serif headings, bordered cards); the about intro no longer has its own banner and H1, so the page header is the only one.

@@ -48,6 +48,8 @@ SITE_ROOT=~/code/imagewize.com/demo/web/app \
 
 **Always pass this working copy as the explicit source argument and do not `cd` into the demo site to run it.** The script syncs with `--delete --delete-excluded`, and with the source omitted it defaults to `$PWD`, which wipes the real theme. Preview with `--dry-run` before `theme` when unsure; if the output deletes `web/wp/...` or `.env`, stop. The sync respects `.distignore`, so dev-only files do not land on the demo. Lima maps `imagewize.com/demo` into the VM, so nothing else needs copying.
 
+Locally the demo runs on **http, not https**: use `http://demo.imagewize.test/legal/`. The https URL does not load.
+
 Demo pages are rebuilt from patterns by `~/code/imagewize.com/demo/scripts/rebuild-demo-subsite.php` (`legal` map). It overwrites page content, so update the map to the child patterns first and use `WP_REBUILD_DRY_RUN=1`. It needs the database, so run it inside the Trellis VM (`limactl shell imagewize.com`, then `cd /srv/www/demo.imagewize.com/current`), not from the host shell. See the Elayne `CLAUDE.md` for the full workflow.
 
 ## Git
