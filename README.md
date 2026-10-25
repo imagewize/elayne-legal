@@ -27,6 +27,6 @@ or upload the zip with Elayne already installed, then activate **Elayne Legal**.
 
 ## License
 
-GNU GPL v3 (or later).
+GNU GPL v3 (or later). See `LICENSE.md`.
 
 The scales-of-justice icon in `assets/logos/` is the [Codicons](https://github.com/microsoft/vscode-codicons) `law` icon by Microsoft, obtained via [Blade Icons](https://blade-ui-kit.com/blade-icons/codicon-law) and licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). It is recoloured (navy for light mode, gold for dark mode).
