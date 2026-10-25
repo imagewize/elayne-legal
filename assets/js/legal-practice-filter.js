@@ -3,7 +3,7 @@
  *
  * Progressive enhancement for the "Legal Practice Areas (Filterable)" pattern.
  * Cards carry legal-cat-{slug} and legal-loc-{slug} classes; the tab buttons
- * carry legal-tab-{slug}. Without JavaScript every card stays visible.
+ * carry legal-tab-{slug}; the script swaps the office buttons for a select. Without JavaScript every card stays visible.
  */
 ( function () {
 	'use strict';
@@ -59,6 +59,27 @@
 					apply();
 				} );
 			} );
+		}
+
+		// The office buttons stay as the editable, no-script markup; show them as a dropdown.
+		var officeButtons = root.querySelector( '.legal-filter-office' );
+		if ( officeButtons ) {
+			var select = document.createElement( 'select' );
+			select.className = 'legal-filter-select';
+			select.setAttribute( 'aria-label', 'Office' );
+			Array.prototype.forEach.call( groups.loc, function ( item ) {
+				var link = item.querySelector( 'a' );
+				var option = document.createElement( 'option' );
+				option.value = keyOf( item );
+				option.textContent = link ? link.textContent : option.value;
+				select.appendChild( option );
+			} );
+			select.addEventListener( 'change', function () {
+				active.loc = select.value;
+				apply();
+			} );
+			officeButtons.parentNode.appendChild( select );
+			groups.loc = [];
 		}
 
 		bind( 'cat' );
