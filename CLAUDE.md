@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-Elayne Legal is a WordPress block (FSE) **child theme** of [Elayne](https://github.com/imagewize/elayne) for law firms (`Template: elayne` in `style.css`). It has no `theme.json`, templates or build step: everything comes from the parent, plus block patterns, two template parts, two style variations, small CSS/JS assets and `functions.php`. Version 0.1.0 is unreleased; the GitHub repo and Packagist entry are created at v1.0.0.
+Elayne Legal is a WordPress block (FSE) **child theme** of [Elayne](https://github.com/imagewize/elayne) for law firms (`Template: elayne` in `style.css`). It has no `theme.json`, templates or build step: everything comes from the parent, plus block patterns, two template parts, two style variations, small CSS/JS assets and `functions.php`. Version 0.1.0 is unreleased. The GitHub repo (`imagewize/elayne-legal`) exists and `main` is pushed; the Packagist entry is created at v1.0.0.
 
 `docs/STATUS.md` holds the prototype-vs-pattern map and the remaining to-do list (only the reviews restyle; the rest of the home page is done). Read it before starting design work. Design prototypes live in the private `~/Documents/elayne-content/legal-corporate/` repo. Update `CHANGELOG.md` (Keep a Changelog, `[Unreleased]`) when adding features.
 

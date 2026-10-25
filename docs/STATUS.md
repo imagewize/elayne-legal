@@ -2,7 +2,7 @@
 
 Working notes, excluded from the release zip and source archives (see `.distignore` and `.gitattributes`).
 Design source: `~/Documents/elayne-content/legal-corporate/` (private `elayne-content` repo). Time log: `~/Documents/elayne-content/WORK.md`.
-Last updated: 2026-10-25. Version: 0.1.0 (unreleased). GitHub repo and Packagist entry are created when v1.0.0 is ready.
+Last updated: 2026-10-25. Version: 0.1.0 (unreleased). GitHub repo (`imagewize/elayne-legal`) exists; the Packagist entry is created when v1.0.0 is ready.
 
 ## Prototype sections vs. child theme
 
