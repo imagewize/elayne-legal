@@ -12,7 +12,7 @@ Last updated: 2026-10-25. Version: 0.1.0 (unreleased). GitHub repo and Packagist
 | Hero with enquiry form + stats | `legal-hero-form` | Done. First section of `page-legal-home` and of the demo `/legal/` home. |
 | Services ticker | `legal-ticker` | Done. Editable list, duplicated into a scrolling track by a `render_block` filter; `legal-ticker` block style. |
 | Practice areas (tabs + location filter) | `legal-practice-areas` | Done, with `assets/js/legal-practice-filter.js`. |
-| What we do (departments) | none | To do. `legal-services` is the older card grid, not this design. |
+| What we do (departments) | `legal-departments` | Done. Five cards, 3 + 2 grid, `legal-departments` block style; in `page-legal-home`. `legal-services` is the older card grid. |
 | Expertise band (navy, feature list) | none | To do. `legal-about-intro` and `legal-stats` are older designs; compare before reusing. |
 | Offices | none | To do. `legal-contact` is a contact block, not a multi-office grid. |
 | Reviews | `legal-testimonials` | Exists (older design). Compare with the prototype's review cards and restyle if needed. |
@@ -22,12 +22,12 @@ Last updated: 2026-10-25. Version: 0.1.0 (unreleased). GitHub repo and Packagist
 
 ## Home page: what is left
 
-The prototype home has 10 sections; 7 are done (header, hero with form, ticker, practice areas, CTA strip, footer, plus the composite). Remaining: 4 pieces of work.
+The prototype home has 10 sections; 8 are done (header, hero with form, ticker, practice areas, departments, CTA strip, footer, plus the composite). Remaining: 3 pieces of work.
 
-1. ~~`page-legal-home` composite~~ Done: hero, practice areas, reviews, CTA strip. Add each new section to it as it lands. Demo `legal` map (dev) re-pointed to the child patterns.
+1. ~~`page-legal-home` composite~~ Done: hero, ticker, practice areas, departments, reviews, CTA strip. Add each new section to it as it lands. Demo `legal` map (dev) re-pointed to the child patterns.
 2. ~~Gold CTA strip~~ Done.
 3. ~~Services ticker~~ Done.
-4. What we do / departments, 5 items (new).
+4. ~~What we do / departments, 5 items~~ Done.
 5. Offices, 3 items (new).
 6. Expertise band, navy with 4 feature points (new).
 7. Reviews: restyle `legal-testimonials` to the prototype's 3 review cards (restyle).

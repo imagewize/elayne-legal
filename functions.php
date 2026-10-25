@@ -20,6 +20,7 @@ function register_block_styles() {
 		'legal-corporate-hero' => __( 'Legal Corporate Hero', 'elayne-legal' ),
 		'legal-practice-areas' => __( 'Legal Practice Areas', 'elayne-legal' ),
 		'legal-ticker'         => __( 'Legal Ticker', 'elayne-legal' ),
+		'legal-departments'    => __( 'Legal Departments', 'elayne-legal' ),
 	);
 
 	foreach ( $styles as $name => $label ) {
@@ -37,6 +38,7 @@ function register_block_styles() {
 				'handle' => "elayne-legal-{$name}",
 				'src'    => get_theme_file_uri( "assets/styles/block-styles/{$name}.css" ),
 				'path'   => get_theme_file_path( "assets/styles/block-styles/{$name}.css" ),
+				'ver'    => (string) filemtime( get_theme_file_path( "assets/styles/block-styles/{$name}.css" ) ),
 			)
 		);
 	}
@@ -48,6 +50,7 @@ function register_block_styles() {
 				'handle' => "elayne-{$name}",
 				'src'    => get_theme_file_uri( "assets/styles/block-styles/{$name}.css" ),
 				'path'   => get_theme_file_path( "assets/styles/block-styles/{$name}.css" ),
+				'ver'    => (string) filemtime( get_theme_file_path( "assets/styles/block-styles/{$name}.css" ) ),
 			)
 		);
 	}

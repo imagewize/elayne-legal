@@ -16,6 +16,7 @@ All notable changes to Elayne Legal are documented here. The format follows
 - Legal Corporate Home Page composite pattern (`page-legal-home`), starting with the enquiry hero.
 - Legal Gold CTA Strip pattern.
 - Legal Services Ticker pattern and `legal-ticker` block style: editable list duplicated into a scrolling track on render, paused on hover and static with reduced motion.
+- Legal Departments (What We Do) pattern and `legal-departments` block style: five numbered cards with linked service lists in a 3 + 2 grid, last card in navy, arrow icon from `assets/images/icons/arrow-right.svg`. Added to `page-legal-home`.
 - Legal services, about, stats, team, testimonials and contact patterns, and the slanted legal cover hero.
 - `render_block_data` filter that retargets the parent's `"theme":"elayne"` template-part references so the child's `parts/header.html` renders.
 - Bundled fonts: Source Serif 4, Open Sans and Mona Sans.
