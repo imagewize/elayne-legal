@@ -1,42 +1,69 @@
 /* legal-buttons.css — Legal Corporate button hover states (design: .btn-gold, .btn-navy, .btn-line). Loaded with core/button. */
 
-.wp-block-button .wp-block-button__link {
+/*
+ * Preset colour classes (.has-*-color, .has-*-background-color, .has-*-border-color)
+ * are output as `var(--wp--preset--color--*) !important`, so hover rules redefine
+ * the preset variable on the hovered link instead of overriding the property.
+ */
+
+.wp-block-button__link {
 	transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
 /* Gold fill: darker gold */
-.wp-block-button .wp-block-button__link.has-primary-alt-accent-background-color:hover,
-.wp-block-button .wp-block-button__link.has-primary-accent-background-color:hover {
-	background-color: #7f6424 !important;
-	color: var(--wp--preset--color--base) !important;
+.wp-block-button__link.has-primary-alt-accent-background-color:hover {
+	--wp--preset--color--primary-alt-accent: #7f6424;
+}
+
+/* Gold fill with dark text (Tailored Services card): darker gold, white text */
+.wp-block-button__link.has-primary-accent-background-color:hover {
+	--wp--preset--color--primary-accent: #7f6424;
+	--wp--preset--color--primary-alt: var(--wp--preset--color--base);
 }
 
 /* Navy fill: deeper navy */
-.wp-block-button .wp-block-button__link.has-primary-background-color:hover {
-	background-color: var(--wp--preset--color--primary-alt) !important;
-	color: var(--wp--preset--color--base) !important;
+.wp-block-button__link.has-primary-background-color:hover {
+	--wp--preset--color--primary: var(--wp--preset--color--primary-alt);
 }
 
-/* Outline on light backgrounds: fill navy */
-.wp-block-button.is-style-outline .wp-block-button__link.has-primary-color:hover {
-	background-color: var(--wp--preset--color--primary) !important;
-	border-color: var(--wp--preset--color--primary) !important;
-	color: var(--wp--preset--color--base) !important;
+/* Dark fill (gold CTA strip): navy */
+.wp-block-button__link.has-primary-alt-background-color:hover {
+	--wp--preset--color--primary-alt: var(--wp--preset--color--primary);
+}
+
+/*
+ * Outline buttons: the fill colour is captured on the wrapper before the link
+ * redefines the variable. Text and border share one preset variable, so the
+ * border changes with the text.
+ */
+
+/* Outline on light backgrounds: fill navy, white text */
+.wp-block-button.is-style-outline:hover {
+	--legal-button-fill: var(--wp--preset--color--primary);
+}
+
+.is-style-outline > .wp-block-button__link.has-primary-color:hover {
+	--wp--preset--color--primary: var(--wp--preset--color--base);
+	background-color: var(--legal-button-fill);
+}
+
+/* Outline on the gold CTA strip: fill dark, white text */
+.wp-block-button.is-style-outline:has(> .has-primary-alt-color):hover {
+	--legal-button-fill: var(--wp--preset--color--primary-alt);
+}
+
+.is-style-outline > .wp-block-button__link.has-primary-alt-color:hover {
+	--wp--preset--color--primary-alt: var(--wp--preset--color--base);
+	background-color: var(--legal-button-fill);
 }
 
 /* Outline on the navy hero: white fill, navy text */
-.is-style-legal-corporate-hero .wp-block-button.is-style-outline .wp-block-button__link.has-base-color:hover {
-	background-color: var(--wp--preset--color--base) !important;
-	color: var(--wp--preset--color--primary) !important;
+.is-style-legal-corporate-hero .wp-block-button.is-style-outline:hover {
+	--legal-button-fill: var(--wp--preset--color--base);
 }
 
-/* Gold CTA strip: dark fill goes navy, outline fills dark */
-.wp-block-button .wp-block-button__link.has-primary-alt-background-color:hover {
-	background-color: var(--wp--preset--color--primary) !important;
-}
-
-.wp-block-button.is-style-outline .wp-block-button__link.has-primary-alt-color:hover {
-	background-color: var(--wp--preset--color--primary-alt) !important;
-	border-color: var(--wp--preset--color--primary-alt) !important;
-	color: var(--wp--preset--color--base) !important;
+.is-style-legal-corporate-hero .is-style-outline > .wp-block-button__link.has-base-color:hover {
+	--wp--preset--color--base: var(--wp--preset--color--primary);
+	background-color: var(--legal-button-fill);
+	border-color: var(--legal-button-fill);
 }

@@ -56,10 +56,6 @@
 	font-weight: 500;
 }
 
-.legal-corporate-header .legal-corporate-header-cta .wp-block-button__link:hover {
-	background-color: #7f6424 !important;
-}
-
 /* No block-gap strip between the utility bar and the main bar */
 .legal-corporate-header.legal-corporate-header > * {
 	margin-block-start: 0;
