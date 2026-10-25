@@ -1,0 +1,45 @@
+/* legal-expertise.css — Legal expertise band. Scoped to .legal-expertise. */
+
+.legal-expertise .legal-eyebrow {
+	text-transform: uppercase;
+	letter-spacing: 0.16em;
+	font-weight: 600;
+}
+
+.legal-expertise .legal-feat-text {
+	color: rgb(255 255 255 / 0.7);
+}
+
+/* Heading column left, feature grid right */
+@media (min-width: 960px) {
+	.legal-expertise .legal-expertise-grid {
+		grid-template-columns: 0.9fr 1.1fr;
+		align-items: center;
+		gap: var(--wp--preset--spacing--x-large);
+	}
+}
+
+/* Four points separated by 1px rules */
+.legal-expertise .legal-feats {
+	gap: 1px;
+	background: rgb(255 255 255 / 0.14);
+	border: 1px solid rgb(255 255 255 / 0.14);
+}
+
+.legal-expertise .legal-feat {
+	display: grid;
+	gap: var(--wp--preset--spacing--2-x-small);
+	align-content: start;
+	padding: var(--wp--preset--spacing--medium);
+	background: rgb(11 22 40 / 0.85);
+}
+
+.legal-expertise .legal-feat > * {
+	margin: 0;
+}
+
+@media (max-width: 599px) {
+	.legal-expertise .legal-feats {
+		grid-template-columns: 1fr;
+	}
+}

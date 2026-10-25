@@ -54,6 +54,17 @@ function register_block_styles() {
 			)
 		);
 	}
+
+	// The expertise band is a cover block that scopes its own selectors (class legal-expertise).
+	wp_enqueue_block_style(
+		'core/cover',
+		array(
+			'handle' => 'elayne-legal-expertise',
+			'src'    => get_theme_file_uri( 'assets/styles/block-styles/legal-expertise.css' ),
+			'path'   => get_theme_file_path( 'assets/styles/block-styles/legal-expertise.css' ),
+			'ver'    => (string) filemtime( get_theme_file_path( 'assets/styles/block-styles/legal-expertise.css' ) ),
+		)
+	);
 }
 add_action( 'init', __NAMESPACE__ . '\register_block_styles' );
 
