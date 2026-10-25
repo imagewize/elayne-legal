@@ -21,6 +21,7 @@ function register_block_styles() {
 		'legal-practice-areas' => __( 'Legal Practice Areas', 'elayne-legal' ),
 		'legal-ticker'         => __( 'Legal Ticker', 'elayne-legal' ),
 		'legal-departments'    => __( 'Legal Departments', 'elayne-legal' ),
+		'legal-offices'        => __( 'Legal Offices', 'elayne-legal' ),
 	);
 
 	foreach ( $styles as $name => $label ) {

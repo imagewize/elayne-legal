@@ -1,0 +1,85 @@
+/* legal-offices.css — Legal offices grid. Scoped to .is-style-legal-offices. */
+
+.is-style-legal-offices .legal-eyebrow {
+	text-transform: uppercase;
+	letter-spacing: 0.16em;
+	font-weight: 600;
+}
+
+/* Map panel plus three office cards on wide screens, as in the prototype */
+@media (min-width: 960px) {
+	.is-style-legal-offices .legal-offices-grid {
+		grid-template-columns: 1.1fr repeat(3, 1fr);
+	}
+}
+
+.is-style-legal-offices .legal-office-map {
+	position: relative;
+	min-height: 11rem;
+	overflow: hidden;
+	border-radius: var(--wp--preset--border-radius--sm);
+}
+
+.is-style-legal-offices .legal-office-map .wp-block-image {
+	position: absolute;
+	inset: 0;
+	margin: 0;
+}
+
+.is-style-legal-offices .legal-office-map img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.is-style-legal-offices .legal-office {
+	display: grid;
+	gap: var(--wp--preset--spacing--2-x-small);
+	align-content: start;
+	padding: var(--wp--preset--spacing--medium);
+	border: 1px solid var(--wp--preset--color--border-dark);
+	border-radius: var(--wp--preset--border-radius--sm);
+}
+
+.is-style-legal-offices .legal-office > * {
+	margin: 0;
+}
+
+.is-style-legal-offices .legal-office-head {
+	align-items: center;
+	min-height: 1.9rem; /* keeps cards aligned when one has the Opening soon badge */
+	gap: var(--wp--preset--spacing--2-x-small);
+}
+
+.is-style-legal-offices .legal-office-label {
+	margin-top: var(--wp--preset--spacing--2-x-small);
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.is-style-legal-offices .legal-office-soon {
+	padding: 0.15rem 0.45rem;
+	border: 1px solid var(--wp--preset--color--primary-alt-accent);
+	border-radius: 2px;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+@media (max-width: 959px) {
+	.is-style-legal-offices .legal-offices-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.is-style-legal-offices .legal-office-map {
+		grid-column: 1 / -1;
+	}
+}
+
+@media (max-width: 599px) {
+	.is-style-legal-offices .legal-offices-grid {
+		grid-template-columns: 1fr;
+	}
+}
