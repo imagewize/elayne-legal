@@ -20,6 +20,20 @@ Last updated: 2026-10-25. Version: 0.1.0 (unreleased). GitHub repo and Packagist
 | Footer | `legal-corporate-footer` | Done. Brand block, three link columns, disclaimer bar. |
 | Team | `legal-team` | Older design, not in the prototype. Keep, restyle to Legal Corporate later. |
 
+## Home page: what is left
+
+The prototype home has 10 sections; 4 are done (header, hero with form, practice areas, footer). Remaining: 7 pieces of work.
+
+1. `page-legal-home` composite (`<!-- wp:pattern -->` refs only, no wrapper group), hero first; then re-point the demo page map.
+2. Gold CTA strip (new).
+3. Services ticker (new, reuse Elayne's ticker mechanism).
+4. What we do / departments, 5 items (new).
+5. Offices, 3 items (new).
+6. Expertise band, navy with 4 feature points (new).
+7. Reviews: restyle `legal-testimonials` to the prototype's 3 review cards (restyle).
+
+Tick items off here and log the time in `WORK.md` as each lands.
+
 ## Hero
 
 `legal-hero-form` is the prototype hero and already lives in the child. The home page on the demo site still composes the older `hero-cover-slanted-legal`. To do:
