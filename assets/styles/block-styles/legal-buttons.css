@@ -6,8 +6,16 @@
  * the preset variable on the hovered link instead of overriding the property.
  */
 
+/* Prototype radius is 4px; the parent's `sm` preset is 10px, which the header CTA and the global button style both use */
 .wp-block-button__link {
+	--wp--preset--border-radius--sm: 4px;
 	transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+/* Prototype .btn sizing: .7rem / 1.25rem padding, 1.2 line height */
+.wp-block-button .wp-block-button__link {
+	padding: 0.7rem 1.25rem;
+	line-height: 1.2;
 }
 
 /* Gold fill: darker gold */
@@ -66,4 +74,31 @@
 	--wp--preset--color--base: var(--wp--preset--color--primary);
 	background-color: var(--legal-button-fill);
 	border-color: var(--legal-button-fill);
+}
+
+/* CTA strip button: white fill with an arrow (assets/images/icons/arrow-right.svg), navy on hover */
+.legal-cta-button .wp-block-button__link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.legal-cta-button .wp-block-button__link::after {
+	content: "";
+	width: 1em;
+	height: 1em;
+	background-color: currentColor;
+	-webkit-mask: url("../../images/icons/arrow-right.svg") center / contain no-repeat;
+	mask: url("../../images/icons/arrow-right.svg") center / contain no-repeat;
+}
+
+/* Swap fill and text: the wrapper captures both before the link redefines them */
+.legal-cta-button:hover {
+	--legal-button-fill: var(--wp--preset--color--primary);
+	--legal-button-text: var(--wp--preset--color--base);
+}
+
+.legal-cta-button .wp-block-button__link.has-base-background-color:hover {
+	--wp--preset--color--base: var(--legal-button-fill);
+	--wp--preset--color--primary: var(--legal-button-text);
 }

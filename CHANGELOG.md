@@ -11,6 +11,9 @@ All notable changes to Elayne Legal are documented here. The format follows
 - Header nav links get the gold underline on hover.
 
 ### Changed
+- Buttons match the prototype: 4px radius, `.7rem 1.25rem` padding, sentence-case Explore buttons in departments and CTA strip.
+- CTA strip is now a dark gold band with a white heading and one white "Book free consultation" button with an arrow.
+- Button hovers redefine the preset colour variables instead of using `!important`.
 - Hero: left column text and enquiry card are top-aligned like the prototype.
 - README logo is now the EOS Icons gavel (MIT) instead of the Codicons scales.
 
