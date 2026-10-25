@@ -25,6 +25,19 @@ Elayne Legal is a WordPress block (FSE) **child theme** of [Elayne](https://gith
 - **Text domain**: everything (functions and all patterns) uses `elayne-legal`; keep it that way in new patterns.
 - **Known checker gap**: `pt-cli check` passes `wp:image` blocks with `width` but no `;height:auto` in the `<img style>`, which the editor rejects (imagewize/pt-cli#16). Add `height:auto` by hand until that rule exists.
 
+## Testing on the demo site
+
+Do not cut a release to test a local change. Sync this working copy into the demo site (it is active on the `/legal/` subsite) with the shared wp-ops script:
+
+```bash
+SITE_ROOT=~/code/imagewize.com/demo/web/app \
+  wp-ops rsync-package-to-site theme elayne-legal ~/code/elayne-legal
+```
+
+**Always pass this working copy as the explicit source argument and do not `cd` into the demo site to run it.** The script syncs with `--delete --delete-excluded`, and with the source omitted it defaults to `$PWD`, which wipes the real theme. Preview with `--dry-run` before `theme` when unsure; if the output deletes `web/wp/...` or `.env`, stop. The sync respects `.distignore`, so dev-only files do not land on the demo. Lima maps `imagewize.com/demo` into the VM, so nothing else needs copying.
+
+Demo pages are rebuilt from patterns by `~/code/imagewize.com/demo/scripts/rebuild-demo-subsite.php` (`legal` map). It overwrites page content, so update the map to the child patterns first and use `WP_REBUILD_DRY_RUN=1`. See the Elayne `CLAUDE.md` for the full workflow.
+
 ## Release packaging
 
 `.distignore` and `.gitattributes` exclude `docs/`, `composer.json`, README, dotfiles and dev files from the release zip and source archives. Keep new dev-only files listed in both.
