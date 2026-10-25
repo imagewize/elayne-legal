@@ -19,6 +19,7 @@ function register_block_styles() {
 	$styles = array(
 		'legal-corporate-hero' => __( 'Legal Corporate Hero', 'elayne-legal' ),
 		'legal-practice-areas' => __( 'Legal Practice Areas', 'elayne-legal' ),
+		'legal-ticker'         => __( 'Legal Ticker', 'elayne-legal' ),
 	);
 
 	foreach ( $styles as $name => $label ) {
@@ -79,6 +80,33 @@ function enqueue_practice_filter( $block_content, $block ) {
 	return $block_content;
 }
 add_filter( 'render_block', __NAMESPACE__ . '\enqueue_practice_filter', 10, 2 );
+
+/**
+ * Turn the list in a legal-ticker group into a seamless scrolling track.
+ *
+ * The editor keeps a plain, editable list. On the front end the list is
+ * duplicated (the copy hidden from assistive tech) and both are wrapped in a
+ * track that CSS translates by half its width.
+ *
+ * @param string $block_content Rendered block HTML.
+ * @param array  $block         Parsed block.
+ * @return string Block HTML with the ticker track.
+ */
+function render_ticker( $block_content, $block ) {
+	if ( 'core/group' !== $block['blockName'] || empty( $block['attrs']['className'] ) || false === strpos( $block['attrs']['className'], 'is-style-legal-ticker' ) ) {
+		return $block_content;
+	}
+
+	if ( ! preg_match( '#<ul\b.*?</ul>#s', $block_content, $match ) ) {
+		return $block_content;
+	}
+
+	$copy  = preg_replace( '#^<ul\b#', '<ul aria-hidden="true"', $match[0] );
+	$track = '<div class="legal-ticker__track">' . $match[0] . $copy . '</div>';
+
+	return str_replace( $match[0], $track, $block_content );
+}
+add_filter( 'render_block', __NAMESPACE__ . '\render_ticker', 10, 2 );
 
 /**
  * Point the parent's template-part references at this theme.

@@ -1,0 +1,66 @@
+/* legal-ticker.css — Legal services ticker. Scoped to .is-style-legal-ticker. */
+
+.is-style-legal-ticker {
+	overflow: hidden;
+	border-top: 1px solid var(--wp--preset--color--primary-alt-accent);
+	border-bottom: 1px solid var(--wp--preset--color--primary-alt-accent);
+}
+
+/* Plain list in the editor; the track wrapper only exists on the front end */
+.is-style-legal-ticker ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.is-style-legal-ticker li {
+	display: flex;
+	align-items: center;
+	padding: 0.6rem 0;
+	font-weight: 600;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+/* Diamond separator */
+.is-style-legal-ticker li::after {
+	content: "";
+	width: 5px;
+	height: 5px;
+	margin-inline: 1.6rem;
+	background: rgba(255, 255, 255, 0.6);
+	transform: rotate(45deg);
+}
+
+.is-style-legal-ticker .legal-ticker__track {
+	display: flex;
+	width: max-content;
+	animation: legal-ticker-scroll 38s linear infinite;
+}
+
+.is-style-legal-ticker .legal-ticker__track ul {
+	flex-wrap: nowrap;
+}
+
+.is-style-legal-ticker:hover .legal-ticker__track {
+	animation-play-state: paused;
+}
+
+@keyframes legal-ticker-scroll {
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.is-style-legal-ticker .legal-ticker__track {
+		animation: none;
+	}
+
+	.is-style-legal-ticker {
+		overflow-x: auto;
+	}
+}
