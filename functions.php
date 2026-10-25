@@ -12,13 +12,13 @@ namespace ElayneLegal;
  * Register Legal Corporate block styles and enqueue their CSS on demand.
  *
  * Each CSS file loads only on pages where the corresponding section is used.
- * The header CSS is enqueued against core/group without a registered style,
- * because the header pattern scopes its own selectors.
+ * The header and footer CSS are enqueued against core/group without a
+ * registered style, because those patterns scope their own selectors.
  */
 function register_block_styles() {
 	$styles = array(
-		'legal-corporate-hero' => __( 'Legal Corporate Hero', 'elayne' ),
-		'legal-practice-areas' => __( 'Legal Practice Areas', 'elayne' ),
+		'legal-corporate-hero' => __( 'Legal Corporate Hero', 'elayne-legal' ),
+		'legal-practice-areas' => __( 'Legal Practice Areas', 'elayne-legal' ),
 	);
 
 	foreach ( $styles as $name => $label ) {
@@ -40,14 +40,16 @@ function register_block_styles() {
 		);
 	}
 
-	wp_enqueue_block_style(
-		'core/group',
-		array(
-			'handle' => 'elayne-legal-corporate-header',
-			'src'    => get_theme_file_uri( 'assets/styles/block-styles/legal-corporate-header.css' ),
-			'path'   => get_theme_file_path( 'assets/styles/block-styles/legal-corporate-header.css' ),
-		)
-	);
+	foreach ( array( 'legal-corporate-header', 'legal-corporate-footer' ) as $name ) {
+		wp_enqueue_block_style(
+			'core/group',
+			array(
+				'handle' => "elayne-{$name}",
+				'src'    => get_theme_file_uri( "assets/styles/block-styles/{$name}.css" ),
+				'path'   => get_theme_file_path( "assets/styles/block-styles/{$name}.css" ),
+			)
+		);
+	}
 }
 add_action( 'init', __NAMESPACE__ . '\register_block_styles' );
 
