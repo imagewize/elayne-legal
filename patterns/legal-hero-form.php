@@ -14,65 +14,65 @@
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"58%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:58%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"legal-hero-eyebrow","textColor":"primary-accent","fontSize":"x-small"} -->
-<p class="legal-hero-eyebrow has-primary-accent-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Business · Property · Family · Disputes', 'elayne' ); ?></p>
+<p class="legal-hero-eyebrow has-primary-accent-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Business · Property · Family · Disputes', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1,"textColor":"base","fontSize":"large"} -->
-<h1 class="wp-block-heading has-base-color has-text-color has-large-font-size"><?php echo wp_kses_post( __( 'Sound legal counsel for businesses, families and <em>investors</em>.', 'elayne' ) ); ?></h1>
+<h1 class="wp-block-heading has-base-color has-text-color has-large-font-size"><?php echo wp_kses_post( __( 'Sound legal counsel for businesses, families and <em>investors</em>.', 'elayne-legal' ) ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"border-dark","fontSize":"base"} -->
-<p class="has-border-dark-color has-text-color has-base-font-size"><?php esc_html_e( 'From company formation to cross-border disputes, our lawyers guide you from the first call to the final signature, in plain language and at a fixed fee where possible.', 'elayne' ); ?></p>
+<p class="has-border-dark-color has-text-color has-base-font-size"><?php esc_html_e( 'From company formation to cross-border disputes, our lawyers guide you from the first call to the final signature, in plain language and at a fixed fee where possible.', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary-alt-accent","textColor":"base"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-base-color has-primary-alt-accent-background-color has-text-color has-background wp-element-button" href="#practice"><?php esc_html_e( 'Explore practice areas', 'elayne' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link has-base-color has-primary-alt-accent-background-color has-text-color has-background wp-element-button" href="#practice"><?php esc_html_e( 'Explore practice areas', 'elayne-legal' ); ?></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"textColor":"base","className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-base-color has-text-color wp-element-button" href="#enquiry"><?php esc_html_e( 'Speak to a lawyer', 'elayne' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-base-color has-text-color wp-element-button" href="#enquiry"><?php esc_html_e( 'Speak to a lawyer', 'elayne-legal' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
 <!-- wp:group {"className":"legal-hero-stats","layout":{"type":"grid","minimumColumnWidth":"7rem"}} -->
 <div class="wp-block-group legal-hero-stats"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|2-x-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"legal-hero-stat-number","textColor":"base","fontSize":"medium"} -->
-<p class="legal-hero-stat-number has-base-color has-text-color has-medium-font-size"><?php esc_html_e( '3,600+', 'elayne' ); ?></p>
+<p class="legal-hero-stat-number has-base-color has-text-color has-medium-font-size"><?php esc_html_e( '3,600+', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"legal-hero-stat-label","textColor":"border-dark","fontSize":"x-small"} -->
-<p class="legal-hero-stat-label has-border-dark-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Clients advised', 'elayne' ); ?></p>
+<p class="legal-hero-stat-label has-border-dark-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Clients advised', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|2-x-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"legal-hero-stat-number","textColor":"base","fontSize":"medium"} -->
-<p class="legal-hero-stat-number has-base-color has-text-color has-medium-font-size"><?php esc_html_e( '1,800+', 'elayne' ); ?></p>
+<p class="legal-hero-stat-number has-base-color has-text-color has-medium-font-size"><?php esc_html_e( '1,800+', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"legal-hero-stat-label","textColor":"border-dark","fontSize":"x-small"} -->
-<p class="legal-hero-stat-label has-border-dark-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Companies formed', 'elayne' ); ?></p>
+<p class="legal-hero-stat-label has-border-dark-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Companies formed', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|2-x-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"legal-hero-stat-number","textColor":"base","fontSize":"medium"} -->
-<p class="legal-hero-stat-number has-base-color has-text-color has-medium-font-size"><?php esc_html_e( '20+', 'elayne' ); ?></p>
+<p class="legal-hero-stat-number has-base-color has-text-color has-medium-font-size"><?php esc_html_e( '20+', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"legal-hero-stat-label","textColor":"border-dark","fontSize":"x-small"} -->
-<p class="legal-hero-stat-label has-border-dark-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Years', 'elayne' ); ?></p>
+<p class="legal-hero-stat-label has-border-dark-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Years', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|2-x-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"legal-hero-stat-number","textColor":"base","fontSize":"medium"} -->
-<p class="legal-hero-stat-number has-base-color has-text-color has-medium-font-size"><?php esc_html_e( '40+', 'elayne' ); ?></p>
+<p class="legal-hero-stat-number has-base-color has-text-color has-medium-font-size"><?php esc_html_e( '40+', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"legal-hero-stat-label","textColor":"border-dark","fontSize":"x-small"} -->
-<p class="legal-hero-stat-label has-border-dark-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Services', 'elayne' ); ?></p>
+<p class="legal-hero-stat-label has-border-dark-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Services', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -82,11 +82,11 @@
 <!-- wp:column {"verticalAlignment":"center","width":"42%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:42%"><!-- wp:group {"className":"legal-hero-form-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"},"border":{"radius":"var:preset|border-radius|sm"}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
 <div id="enquiry" class="wp-block-group legal-hero-form-card has-base-background-color has-background" style="border-radius:var(--wp--preset--border-radius--sm);padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:heading {"textColor":"primary","fontSize":"medium"} -->
-<h2 class="wp-block-heading has-primary-color has-text-color has-medium-font-size"><?php esc_html_e( 'Request a free consultation', 'elayne' ); ?></h2>
+<h2 class="wp-block-heading has-primary-color has-text-color has-medium-font-size"><?php esc_html_e( 'Request a free consultation', 'elayne-legal' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"main-accent","fontSize":"small"} -->
-<p class="has-main-accent-color has-text-color has-small-font-size"><?php esc_html_e( 'Tell us what you need. A lawyer will reply within one working day.', 'elayne' ); ?></p>
+<p class="has-main-accent-color has-text-color has-small-font-size"><?php esc_html_e( 'Tell us what you need. A lawyer will reply within one working day.', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph -->
 
 <?php if ( function_exists( 'wpcf7' ) ) : ?><!-- wp:shortcode -->
@@ -94,73 +94,73 @@
 <!-- /wp:shortcode -->
 <?php else : ?><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|2-x-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.06em"}},"textColor":"primary","fontSize":"x-small"} -->
-<p class="has-primary-color has-text-color has-x-small-font-size" style="font-weight:600;letter-spacing:0.06em;text-transform:uppercase"><?php esc_html_e( 'Full name *', 'elayne' ); ?></p>
+<p class="has-primary-color has-text-color has-x-small-font-size" style="font-weight:600;letter-spacing:0.06em;text-transform:uppercase"><?php esc_html_e( 'Full name *', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"border":{"radius":"var:preset|border-radius|sm","width":"1px"}},"backgroundColor":"secondary","borderColor":"border-light","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-border-color has-border-light-border-color has-secondary-background-color has-background" style="border-width:1px;border-radius:var(--wp--preset--border-radius--sm);padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph {"textColor":"main-accent","fontSize":"small"} -->
-<p class="has-main-accent-color has-text-color has-small-font-size"><?php esc_html_e( 'Your name', 'elayne' ); ?></p>
+<p class="has-main-accent-color has-text-color has-small-font-size"><?php esc_html_e( 'Your name', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|2-x-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.06em"}},"textColor":"primary","fontSize":"x-small"} -->
-<p class="has-primary-color has-text-color has-x-small-font-size" style="font-weight:600;letter-spacing:0.06em;text-transform:uppercase"><?php esc_html_e( 'Email *', 'elayne' ); ?></p>
+<p class="has-primary-color has-text-color has-x-small-font-size" style="font-weight:600;letter-spacing:0.06em;text-transform:uppercase"><?php esc_html_e( 'Email *', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"border":{"radius":"var:preset|border-radius|sm","width":"1px"}},"backgroundColor":"secondary","borderColor":"border-light","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-border-color has-border-light-border-color has-secondary-background-color has-background" style="border-width:1px;border-radius:var(--wp--preset--border-radius--sm);padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph {"textColor":"main-accent","fontSize":"small"} -->
-<p class="has-main-accent-color has-text-color has-small-font-size"><?php esc_html_e( 'example@example.com', 'elayne' ); ?></p>
+<p class="has-main-accent-color has-text-color has-small-font-size"><?php esc_html_e( 'example@example.com', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|2-x-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.06em"}},"textColor":"primary","fontSize":"x-small"} -->
-<p class="has-primary-color has-text-color has-x-small-font-size" style="font-weight:600;letter-spacing:0.06em;text-transform:uppercase"><?php esc_html_e( 'Phone', 'elayne' ); ?></p>
+<p class="has-primary-color has-text-color has-x-small-font-size" style="font-weight:600;letter-spacing:0.06em;text-transform:uppercase"><?php esc_html_e( 'Phone', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"border":{"radius":"var:preset|border-radius|sm","width":"1px"}},"backgroundColor":"secondary","borderColor":"border-light","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-border-color has-border-light-border-color has-secondary-background-color has-background" style="border-width:1px;border-radius:var(--wp--preset--border-radius--sm);padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph {"textColor":"main-accent","fontSize":"small"} -->
-<p class="has-main-accent-color has-text-color has-small-font-size"><?php esc_html_e( '+00 00 000 00 00', 'elayne' ); ?></p>
+<p class="has-main-accent-color has-text-color has-small-font-size"><?php esc_html_e( '+00 00 000 00 00', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|2-x-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.06em"}},"textColor":"primary","fontSize":"x-small"} -->
-<p class="has-primary-color has-text-color has-x-small-font-size" style="font-weight:600;letter-spacing:0.06em;text-transform:uppercase"><?php esc_html_e( 'I need help with *', 'elayne' ); ?></p>
+<p class="has-primary-color has-text-color has-x-small-font-size" style="font-weight:600;letter-spacing:0.06em;text-transform:uppercase"><?php esc_html_e( 'I need help with *', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"border":{"radius":"var:preset|border-radius|sm","width":"1px"}},"backgroundColor":"secondary","borderColor":"border-light","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-border-color has-border-light-border-color has-secondary-background-color has-background" style="border-width:1px;border-radius:var(--wp--preset--border-radius--sm);padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph {"textColor":"main-accent","fontSize":"small"} -->
-<p class="has-main-accent-color has-text-color has-small-font-size"><?php esc_html_e( 'Select an area of law', 'elayne' ); ?></p>
+<p class="has-main-accent-color has-text-color has-small-font-size"><?php esc_html_e( 'Select an area of law', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|2-x-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.06em"}},"textColor":"primary","fontSize":"x-small"} -->
-<p class="has-primary-color has-text-color has-x-small-font-size" style="font-weight:600;letter-spacing:0.06em;text-transform:uppercase"><?php esc_html_e( 'Briefly describe your matter', 'elayne' ); ?></p>
+<p class="has-primary-color has-text-color has-x-small-font-size" style="font-weight:600;letter-spacing:0.06em;text-transform:uppercase"><?php esc_html_e( 'Briefly describe your matter', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"border":{"radius":"var:preset|border-radius|sm","width":"1px"}},"backgroundColor":"secondary","borderColor":"border-light","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-border-color has-border-light-border-color has-secondary-background-color has-background" style="border-width:1px;border-radius:var(--wp--preset--border-radius--sm);padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph {"textColor":"main-accent","fontSize":"small"} -->
-<p class="has-main-accent-color has-text-color has-small-font-size"><?php esc_html_e( 'Tell us how we can help...', 'elayne' ); ?></p>
+<p class="has-main-accent-color has-text-color has-small-font-size"><?php esc_html_e( 'Tell us how we can help...', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary","textColor":"base"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-base-color has-primary-background-color has-text-color has-background wp-element-button" href="#enquiry"><?php esc_html_e( 'Book free consultation', 'elayne' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link has-base-color has-primary-background-color has-text-color has-background wp-element-button" href="#enquiry"><?php esc_html_e( 'Book free consultation', 'elayne-legal' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 <?php endif; ?>
 
 <!-- wp:paragraph {"align":"center","textColor":"main-accent","fontSize":"x-small"} -->
-<p class="has-text-align-center has-main-accent-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Confidential. We never share your details.', 'elayne' ); ?></p>
+<p class="has-text-align-center has-main-accent-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Confidential. We never share your details.', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>

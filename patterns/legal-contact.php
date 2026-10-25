@@ -13,16 +13,16 @@
 	<div class="wp-block-group alignwide has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--x-large)"><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|xx-large","left":"var:preset|spacing|xx-large"}}}} -->
 		<div class="wp-block-columns"><!-- wp:column {"width":"40%","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium"}}}} -->
 			<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);flex-basis:40%"><!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontSize":"large"} -->
-				<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Schedule a Consultation', 'elayne' ); ?></h3>
+				<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Schedule a Consultation', 'elayne-legal' ); ?></h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"textColor":"main-accent"} -->
-				<p class="has-main-accent-color has-text-color"><?php esc_html_e( 'Contact us today to discuss your legal needs. We offer free initial consultations for most practice areas.', 'elayne' ); ?></p>
+				<p class="has-main-accent-color has-text-color"><?php esc_html_e( 'Contact us today to discuss your legal needs. We offer free initial consultations for most practice areas.', 'elayne-legal' ); ?></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:buttons -->
 				<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary","textColor":"base"} -->
-					<div class="wp-block-button"><a class="wp-block-button__link has-base-color has-primary-background-color has-text-color has-background wp-element-button"><?php esc_html_e( 'Contact Us Today', 'elayne' ); ?></a></div>
+					<div class="wp-block-button"><a class="wp-block-button__link has-base-color has-primary-background-color has-text-color has-background wp-element-button"><?php esc_html_e( 'Contact Us Today', 'elayne-legal' ); ?></a></div>
 					<!-- /wp:button -->
 				</div>
 				<!-- /wp:buttons -->
@@ -38,11 +38,11 @@
 							<!-- /wp:image -->
 
 							<!-- wp:heading {"level":4,"style":{"typography":{"fontWeight":"600"}}} -->
-							<h4 class="wp-block-heading" style="font-weight:600"><?php esc_html_e( 'Phone', 'elayne' ); ?></h4>
+							<h4 class="wp-block-heading" style="font-weight:600"><?php esc_html_e( 'Phone', 'elayne-legal' ); ?></h4>
 							<!-- /wp:heading -->
 
 							<!-- wp:paragraph {"fontSize":"small"} -->
-							<p class="has-small-font-size"><?php esc_html_e( '(555) 123-4567', 'elayne' ); ?></p>
+							<p class="has-small-font-size"><?php esc_html_e( '(555) 123-4567', 'elayne-legal' ); ?></p>
 							<!-- /wp:paragraph -->
 						</div>
 						<!-- /wp:group -->
@@ -56,11 +56,11 @@
 							<!-- /wp:image -->
 
 							<!-- wp:heading {"level":4,"style":{"typography":{"fontWeight":"600"}}} -->
-							<h4 class="wp-block-heading" style="font-weight:600"><?php esc_html_e( 'Email', 'elayne' ); ?></h4>
+							<h4 class="wp-block-heading" style="font-weight:600"><?php esc_html_e( 'Email', 'elayne-legal' ); ?></h4>
 							<!-- /wp:heading -->
 
 							<!-- wp:paragraph {"fontSize":"small"} -->
-							<p class="has-small-font-size"><?php esc_html_e( 'example@example.com', 'elayne' ); ?></p>
+							<p class="has-small-font-size"><?php esc_html_e( 'example@example.com', 'elayne-legal' ); ?></p>
 							<!-- /wp:paragraph -->
 						</div>
 						<!-- /wp:group -->
@@ -77,11 +77,11 @@
 							<!-- /wp:image -->
 
 							<!-- wp:heading {"level":4,"style":{"typography":{"fontWeight":"600"}}} -->
-							<h4 class="wp-block-heading" style="font-weight:600"><?php esc_html_e( 'Office Location', 'elayne' ); ?></h4>
+							<h4 class="wp-block-heading" style="font-weight:600"><?php esc_html_e( 'Office Location', 'elayne-legal' ); ?></h4>
 							<!-- /wp:heading -->
 
 							<!-- wp:paragraph {"fontSize":"small"} -->
-							<p class="has-small-font-size"><?php esc_html_e( '123 Main Street, Suite 200', 'elayne' ); ?><br><?php esc_html_e( 'Downtown, ST 12345', 'elayne' ); ?></p>
+							<p class="has-small-font-size"><?php esc_html_e( '123 Main Street, Suite 200', 'elayne-legal' ); ?><br><?php esc_html_e( 'Downtown, ST 12345', 'elayne-legal' ); ?></p>
 							<!-- /wp:paragraph -->
 						</div>
 						<!-- /wp:group -->
@@ -95,11 +95,11 @@
 							<!-- /wp:image -->
 
 							<!-- wp:heading {"level":4,"style":{"typography":{"fontWeight":"600"}}} -->
-							<h4 class="wp-block-heading" style="font-weight:600"><?php esc_html_e( 'Office Hours', 'elayne' ); ?></h4>
+							<h4 class="wp-block-heading" style="font-weight:600"><?php esc_html_e( 'Office Hours', 'elayne-legal' ); ?></h4>
 							<!-- /wp:heading -->
 
 							<!-- wp:paragraph {"fontSize":"small"} -->
-							<p class="has-small-font-size"><?php esc_html_e( 'Mon-Fri: 9:00 AM - 5:00 PM', 'elayne' ); ?><br><?php esc_html_e( 'Evenings by appointment', 'elayne' ); ?></p>
+							<p class="has-small-font-size"><?php esc_html_e( 'Mon-Fri: 9:00 AM - 5:00 PM', 'elayne-legal' ); ?><br><?php esc_html_e( 'Evenings by appointment', 'elayne-legal' ); ?></p>
 							<!-- /wp:paragraph -->
 						</div>
 						<!-- /wp:group -->
