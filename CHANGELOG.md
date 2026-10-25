@@ -19,6 +19,7 @@ All notable changes to Elayne Legal are documented here. The format follows
 - Legal Services Ticker pattern and `legal-ticker` block style: editable list duplicated into a scrolling track on render, paused on hover and static with reduced motion.
 - Legal Departments (What We Do) pattern and `legal-departments` block style: five numbered cards with linked service lists in a 3 + 2 grid, last card in navy, arrow icon from `assets/images/icons/arrow-right.svg`. Added to `page-legal-home`.
 - Legal Expertise Band pattern (navy cover block, headline and four feature points in a 2 x 2 grid) and `legal-expertise.css`, enqueued against `core/cover`. Ships as a solid colour because the prototype photo is Unsplash-licensed; add a background image to the cover for the faint texture. Added to `page-legal-home`.
+- Dev tooling: sentinel (browser block validation) wired to the demo `/legal/` subsite through Trellis, plus `composer lint`, `composer wpcs:scan` and `composer wpcs:fix` for PHP outside `patterns/`. Documented in CLAUDE.md.
 - Legal services, about, stats, team, testimonials and contact patterns, and the slanted legal cover hero.
 - `render_block_data` filter that retargets the parent's `"theme":"elayne"` template-part references so the child's `parts/header.html` renders.
 - Bundled fonts: Source Serif 4, Open Sans and Mona Sans.

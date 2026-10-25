@@ -56,7 +56,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","textColor":"primary","borderColor":"primary","style":{"border":{"radius":"0","width":"1px"},"typography":{"fontWeight":"600","letterSpacing":"0.12em","textTransform":"uppercase","fontSize":"var(--wp--preset--font-size--x-small)"}}} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-primary-color has-text-color has-border-color has-primary-border-color wp-element-button" href="#contact" style="border-width:1px;border-radius:0;font-size:var(--wp--preset--font-size--x-small);font-weight:600;letter-spacing:0.12em;text-transform:uppercase"><?php esc_html_e( 'Explore', 'elayne-legal' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-primary-color has-text-color has-border-color has-primary-border-color has-custom-font-size wp-element-button" href="#contact" style="border-width:1px;border-radius:0;font-size:var(--wp--preset--font-size--x-small);font-weight:600;letter-spacing:0.12em;text-transform:uppercase"><?php esc_html_e( 'Explore', 'elayne-legal' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -90,7 +90,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","textColor":"primary","borderColor":"primary","style":{"border":{"radius":"0","width":"1px"},"typography":{"fontWeight":"600","letterSpacing":"0.12em","textTransform":"uppercase","fontSize":"var(--wp--preset--font-size--x-small)"}}} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-primary-color has-text-color has-border-color has-primary-border-color wp-element-button" href="#contact" style="border-width:1px;border-radius:0;font-size:var(--wp--preset--font-size--x-small);font-weight:600;letter-spacing:0.12em;text-transform:uppercase"><?php esc_html_e( 'Explore', 'elayne-legal' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-primary-color has-text-color has-border-color has-primary-border-color has-custom-font-size wp-element-button" href="#contact" style="border-width:1px;border-radius:0;font-size:var(--wp--preset--font-size--x-small);font-weight:600;letter-spacing:0.12em;text-transform:uppercase"><?php esc_html_e( 'Explore', 'elayne-legal' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -124,7 +124,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","textColor":"primary","borderColor":"primary","style":{"border":{"radius":"0","width":"1px"},"typography":{"fontWeight":"600","letterSpacing":"0.12em","textTransform":"uppercase","fontSize":"var(--wp--preset--font-size--x-small)"}}} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-primary-color has-text-color has-border-color has-primary-border-color wp-element-button" href="#contact" style="border-width:1px;border-radius:0;font-size:var(--wp--preset--font-size--x-small);font-weight:600;letter-spacing:0.12em;text-transform:uppercase"><?php esc_html_e( 'Explore', 'elayne-legal' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-primary-color has-text-color has-border-color has-primary-border-color has-custom-font-size wp-element-button" href="#contact" style="border-width:1px;border-radius:0;font-size:var(--wp--preset--font-size--x-small);font-weight:600;letter-spacing:0.12em;text-transform:uppercase"><?php esc_html_e( 'Explore', 'elayne-legal' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -158,7 +158,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","textColor":"primary","borderColor":"primary","style":{"border":{"radius":"0","width":"1px"},"typography":{"fontWeight":"600","letterSpacing":"0.12em","textTransform":"uppercase","fontSize":"var(--wp--preset--font-size--x-small)"}}} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-primary-color has-text-color has-border-color has-primary-border-color wp-element-button" href="#contact" style="border-width:1px;border-radius:0;font-size:var(--wp--preset--font-size--x-small);font-weight:600;letter-spacing:0.12em;text-transform:uppercase"><?php esc_html_e( 'Explore', 'elayne-legal' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-primary-color has-text-color has-border-color has-primary-border-color has-custom-font-size wp-element-button" href="#contact" style="border-width:1px;border-radius:0;font-size:var(--wp--preset--font-size--x-small);font-weight:600;letter-spacing:0.12em;text-transform:uppercase"><?php esc_html_e( 'Explore', 'elayne-legal' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -192,7 +192,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill","backgroundColor":"primary-accent","textColor":"primary-alt","style":{"border":{"radius":"0"},"typography":{"fontWeight":"600","letterSpacing":"0.12em","textTransform":"uppercase","fontSize":"var(--wp--preset--font-size--x-small)"}}} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-primary-alt-color has-primary-accent-background-color has-text-color has-background wp-element-button" href="#contact" style="border-radius:0;font-size:var(--wp--preset--font-size--x-small);font-weight:600;letter-spacing:0.12em;text-transform:uppercase"><?php esc_html_e( 'Explore', 'elayne-legal' ); ?></a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-primary-alt-color has-primary-accent-background-color has-text-color has-background has-custom-font-size wp-element-button" href="#contact" style="border-radius:0;font-size:var(--wp--preset--font-size--x-small);font-weight:600;letter-spacing:0.12em;text-transform:uppercase"><?php esc_html_e( 'Explore', 'elayne-legal' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
