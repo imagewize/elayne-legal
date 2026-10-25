@@ -14,9 +14,10 @@ All notable changes to Elayne Legal are documented here. The format follows
 ### Fixed
 - Header brand (mark, site name and tagline) links to the home page.
 - Header nav links showed a double underline (the current-page text underline plus the gold border); only the gold line remains.
-- Header is now sticky: the template-part wrapper sticks, since the inner header was as tall as its parent and could not (offset for the admin bar).
+- Only the white main bar of the header is sticky (offset for the admin bar); the utility bar scrolls away. The header wrappers use `display: contents` so the bar can stick against the page, which the header element's own box could not do.
 
 ### Changed
+- Header bars use the same 1200px container as the page sections, so the logo lines up with the content.
 - `legal-stats` is now a navy band with gold serif figures and a gold rule, and `legal-contact` a short intro with an email button beside four detail cards (phone, email, office, hours). Both use the Legal Corporate eyebrow and serif headings; the contact pattern no longer needs parent icon images.
 - About intro and team patterns restyled to Legal Corporate (eyebrow, serif headings, bordered cards); the about intro no longer has its own banner and H1, so the page header is the only one.
 - Buttons match the prototype: 4px radius, `.7rem 1.25rem` padding, sentence-case Explore buttons in departments and CTA strip.

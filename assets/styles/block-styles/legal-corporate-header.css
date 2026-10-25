@@ -1,23 +1,20 @@
-/* Legal Corporate header: utility bar links, sticky main bar, monogram brand mark.
+/* Legal Corporate header: utility bar links, sticky main bar (utility bar scrolls away), monogram brand mark.
    Loaded via wp_enqueue_block_style on core/group; selectors are scoped to
    .legal-corporate-header so they are inert on other sites. */
 
+/* Only the white main bar sticks; the utility bar scrolls away. Sticky needs a
+   tall containing block, so the template-part wrapper and the header element
+   drop their own boxes (display: contents) and the main bar sticks against the
+   page wrapper instead. */
+.wp-block-template-part:has(> .legal-corporate-header),
 .legal-corporate-header {
-	position: sticky;
-	top: 0;
-	z-index: 30;
+	display: contents;
 }
 
-/* Sticky only works against a tall parent, and the template-part wrapper is
-   exactly as tall as the header, so the wrapper has to stick instead. */
-.wp-block-template-part:has(> .legal-corporate-header) {
+.legal-corporate-header .legal-corporate-main-bar {
 	position: sticky;
-	top: 0;
-	z-index: 30;
-}
-
-.admin-bar .wp-block-template-part:has(> .legal-corporate-header) {
 	top: var(--wp-admin--admin-bar--height, 0);
+	z-index: 30;
 }
 
 .legal-corporate-header .legal-corporate-utility {

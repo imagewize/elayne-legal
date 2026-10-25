@@ -57,7 +57,6 @@ Tick items off here and log the time in `WORK.md` as each lands.
 
 - `screenshot.png` (1200x900).
 - Decide whether the older `legal-services` card grid goes or gets restyled; no composite uses it.
-- Page header is left-aligned at 1200px but the header bar is full width, so the logo sits further left than the content. Decide whether the header container should also be 1200px.
 - Checked at desktop width: contact page and the stats band on about. Still to look at: services page, and the rest of about, at desktop and phone width.
 - Style variation check: Legal Blue still ships Bitter via the parent; decide whether it should use Source Serif 4.
 - Mobile header: sticky, brand and hidden utility bar/CTA verified at 390px on dev; the overlay menu itself is still to check.
