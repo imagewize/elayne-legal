@@ -11,6 +11,7 @@ Elayne Legal is a WordPress block (FSE) **child theme** of [Elayne](https://gith
 ## Commands
 
 - `composer check` runs `pt-cli check patterns/ --theme=elayne`, the Elayne pattern compliance checker (the "Pass 1/2/3" referred to in STATUS). It needs `composer install` first (pt-cli is a dev dependency, installed to `vendor/`). STATUS notes it historically ran from the Elayne repo.
+- `npm install` then `npm run setup` installs sentinel (`@imwz/wp-pattern-sentinel`) and its Chromium. `npm run validate` runs `sentinel --log patterns/`, which opens each pattern in the Gutenberg editor of a local WordPress site and reports block validation errors and content mismatches. `npm run validate:file -- patterns/x.php` checks one file, `validate:new` skips patterns unchanged since the last pass. Pass `--url`, `--user` and `--pass` (or a `.env`) for the site; the site needs Elayne and this theme active.
 - No test suite, linter config or JS build exists. To see changes, activate the theme in a WordPress site with Elayne installed and open the Site Editor.
 
 ## Architecture

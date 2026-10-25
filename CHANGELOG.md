@@ -7,6 +7,7 @@ All notable changes to Elayne Legal are documented here. The format follows
 ## [Unreleased]
 
 ### Added
+- `package.json` with `@imwz/wp-pattern-sentinel` and `validate` scripts, so patterns can be checked in the Gutenberg editor like in Elayne.
 - Child theme of Elayne for law firms, extracted from the legal patterns bundled in Elayne 4.11.0.
 - Legal Corporate style variation: Source Serif 4 headings, Open Sans body, compact type scale, navy and gold palette.
 - Legal Blue style variation.

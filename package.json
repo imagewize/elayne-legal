@@ -1,0 +1,15 @@
+{
+	"name": "elayne-legal",
+	"private": true,
+	"description": "Development tooling for the Elayne Legal child theme.",
+	"scripts": {
+		"setup": "npx playwright install chromium",
+		"validate": "sentinel --log patterns/",
+		"validate:file": "sentinel",
+		"validate:new": "sentinel --cache --log patterns/",
+		"validate:clear-cache": "sentinel --clear-cache"
+	},
+	"dependencies": {
+		"@imwz/wp-pattern-sentinel": "^1.2.2"
+	}
+}
