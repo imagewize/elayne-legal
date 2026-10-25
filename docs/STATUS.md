@@ -15,14 +15,14 @@ Last updated: 2026-10-25. Version: 0.1.0 (unreleased). GitHub repo and Packagist
 | What we do (departments) | `legal-departments` | Done. Five cards, 3 + 2 grid, `legal-departments` block style; in `page-legal-home`. `legal-services` is the older card grid. |
 | Expertise band (navy, feature list) | `legal-expertise-band` | Done as a solid navy cover block (no photo: the prototype's `band.jpg` is Unsplash, so it cannot ship). Demo can add the photo as a media upload. |
 | Offices | `legal-offices` | Done. Map panel (SVG asset) plus three office cards; in `page-legal-home`. `legal-contact` is a separate contact block. |
-| Reviews | `legal-testimonials` | Exists (older design). Compare with the prototype's review cards and restyle if needed. |
+| Reviews | `legal-testimonials` | Done. Three review cards (stars, serif quote, role and place), native blocks, no CSS. Passes `composer check` and sentinel. |
 | Gold CTA strip | `legal-cta-strip` | Done. Gold band, headline, two buttons; no extra CSS. |
 | Footer | `legal-corporate-footer` | Done. Brand block, three link columns, disclaimer bar. |
 | Team | `legal-team` | Older design, not in the prototype. Keep, restyle to Legal Corporate later. |
 
 ## Home page: what is left
 
-The prototype home has 10 sections; 10 are done (header, hero with form, ticker, practice areas, departments, expertise band, offices, CTA strip, footer, plus the composite). Remaining: 1 piece of work (reviews restyle).
+The prototype home has 10 sections; 10 are done (header, hero with form, ticker, practice areas, departments, expertise band, offices, CTA strip, footer, plus the composite). Nothing left on the home page.
 
 1. ~~`page-legal-home` composite~~ Done: hero, ticker, practice areas, departments, expertise band, offices, reviews, CTA strip. Add each new section to it as it lands. Demo `legal` map (dev) re-pointed to the child patterns.
 2. ~~Gold CTA strip~~ Done.
@@ -30,14 +30,14 @@ The prototype home has 10 sections; 10 are done (header, hero with form, ticker,
 4. ~~What we do / departments, 5 items~~ Done.
 5. ~~Offices, 3 items~~ Done.
 6. ~~Expertise band, navy with 4 feature points~~ Done.
-7. Reviews: restyle `legal-testimonials` to the prototype's 3 review cards (restyle).
+7. ~~Reviews restyle~~ Done.
 
 Tick items off here and log the time in `WORK.md` as each lands.
 
 ## Hero
 
 `legal-hero-form` is the prototype hero and is the first section of `page-legal-home`. The demo `/legal/` home (post 5) is built from the child patterns on dev. To do:
-- Decide whether `hero-cover-slanted-legal` stays in the child (Legal Blue variation) or is dropped.
+- `hero-cover-slanted-legal` was dropped (removed from the child).
 - Update the prod map in `rebuild-demo-subsite.php` (already edited, not yet run on prod) and add `legal-corporate-footer` to its `template_parts`.
 - The services, about and contact demo pages still use the older patterns.
 

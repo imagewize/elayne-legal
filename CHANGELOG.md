@@ -6,6 +6,13 @@ All notable changes to Elayne Legal are documented here. The format follows
 
 ## [Unreleased]
 
+### Changed
+- Hero: left column text and enquiry card are top-aligned like the prototype.
+- README logo is now the EOS Icons gavel (MIT) instead of the Codicons scales.
+
+### Removed
+- `hero-cover-slanted-legal` pattern (unused).
+
 ### Added
 - `package.json` with `@imwz/wp-pattern-sentinel` and `validate` scripts, so patterns can be checked in the Gutenberg editor like in Elayne.
 - Child theme of Elayne for law firms, extracted from the legal patterns bundled in Elayne 4.11.0.
@@ -20,7 +27,9 @@ All notable changes to Elayne Legal are documented here. The format follows
 - Legal Departments (What We Do) pattern and `legal-departments` block style: five numbered cards with linked service lists in a 3 + 2 grid, last card in navy, arrow icon from `assets/images/icons/arrow-right.svg`. Added to `page-legal-home`.
 - Legal Expertise Band pattern (navy cover block, headline and four feature points in a 2 x 2 grid) and `legal-expertise.css`, enqueued against `core/cover`. Ships as a solid colour because the prototype photo is Unsplash-licensed; add a background image to the cover for the faint texture. Added to `page-legal-home`.
 - Legal Offices pattern and `legal-offices` block style: decorative map panel (`assets/images/offices-map.svg`) beside three office cards with address, phone, hours and an optional "Opening soon" badge. Added to `page-legal-home`.
+- Legal Client Reviews: `legal-testimonials` restyled to the prototype's three review cards (gold stars, serif quote, role and location) in native blocks, no extra CSS.
+- Practice areas: joined card grid with hover background, office chips on each card, and an office dropdown (the script swaps the native office buttons for a `<select>`; no `wp:html` block).
 - Dev tooling: sentinel (browser block validation) wired to the demo `/legal/` subsite through Trellis, plus `composer lint`, `composer wpcs:scan` and `composer wpcs:fix` for PHP outside `patterns/`. Documented in CLAUDE.md.
-- Legal services, about, stats, team, testimonials and contact patterns, and the slanted legal cover hero.
+- Legal services, about, stats, team, testimonials and contact patterns.
 - `render_block_data` filter that retargets the parent's `"theme":"elayne"` template-part references so the child's `parts/header.html` renders.
 - Bundled fonts: Source Serif 4, Open Sans and Mona Sans.
