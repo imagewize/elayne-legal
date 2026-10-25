@@ -18,7 +18,7 @@ Last updated: 2026-10-25. Version: 0.1.0 (unreleased). GitHub repo (`imagewize/e
 | Reviews | `legal-testimonials` | Done. Three review cards (stars, serif quote, role and place), native blocks, no CSS. Passes `composer check` and sentinel. |
 | Gold CTA strip | `legal-cta-strip` | Done. Gold band, headline, two buttons; no extra CSS. |
 | Footer | `legal-corporate-footer` | Done. Brand block, three link columns, disclaimer bar. |
-| Team | `legal-team` | Older design, not in the prototype. Keep, restyle to Legal Corporate later. |
+| Team | `legal-team` | Restyled to Legal Corporate, text-only. The demo adds three Unsplash portraits (`elayne-content/legal-corporate/images/portrait-*.jpg`) through `rebuild-demo-subsite.php`. |
 
 ## Home page: what is left
 

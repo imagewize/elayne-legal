@@ -25,6 +25,7 @@ All notable changes to Elayne Legal are documented here. The format follows
 - README logo is now the EOS Icons gavel (MIT) instead of the Codicons scales.
 
 ### Removed
+- Bundled attorney photos (`attorney-1..3.webp`); the team cards are text-only and the demo adds portraits as media uploads.
 - `hero-cover-slanted-legal` pattern (unused).
 
 ### Added
