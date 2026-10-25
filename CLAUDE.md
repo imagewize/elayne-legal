@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Elayne Legal is a WordPress block (FSE) **child theme** of [Elayne](https://github.com/imagewize/elayne) for law firms (`Template: elayne` in `style.css`). It has no `theme.json`, templates or build step: everything comes from the parent, plus block patterns, two template parts, two style variations, small CSS/JS assets and `functions.php`. Version 0.1.0 is unreleased. The GitHub repo (`imagewize/elayne-legal`) exists and `main` is pushed; the Packagist entry is created at v1.0.0.
 
-`docs/STATUS.md` holds the prototype-vs-pattern map and the remaining to-do list (only the reviews restyle; the rest of the home page is done). Read it before starting design work. Design prototypes live in the private `~/Documents/elayne-content/legal-corporate/` repo. Update `CHANGELOG.md` (Keep a Changelog, `[Unreleased]`) when adding features.
+`docs/STATUS.md` holds the prototype-vs-pattern map and the remaining to-do list (the home page is done; the inner pages are composites, with `legal-stats` and `legal-contact` still to restyle). Read it before starting design work. Design prototypes live in the private `~/Documents/elayne-content/legal-corporate/` repo. Update `CHANGELOG.md` (Keep a Changelog, `[Unreleased]`) when adding features.
 
 ## Commands
 
@@ -48,7 +48,11 @@ SITE_ROOT=~/code/imagewize.com/demo/web/app \
 
 **Always pass this working copy as the explicit source argument and do not `cd` into the demo site to run it.** The script syncs with `--delete --delete-excluded`, and with the source omitted it defaults to `$PWD`, which wipes the real theme. Preview with `--dry-run` before `theme` when unsure; if the output deletes `web/wp/...` or `.env`, stop. The sync respects `.distignore`, so dev-only files do not land on the demo. Lima maps `imagewize.com/demo` into the VM, so nothing else needs copying.
 
-Demo pages are rebuilt from patterns by `~/code/imagewize.com/demo/scripts/rebuild-demo-subsite.php` (`legal` map). It overwrites page content, so update the map to the child patterns first and use `WP_REBUILD_DRY_RUN=1`. See the Elayne `CLAUDE.md` for the full workflow.
+Demo pages are rebuilt from patterns by `~/code/imagewize.com/demo/scripts/rebuild-demo-subsite.php` (`legal` map). It overwrites page content, so update the map to the child patterns first and use `WP_REBUILD_DRY_RUN=1`. It needs the database, so run it inside the Trellis VM (`limactl shell imagewize.com`, then `cd /srv/www/demo.imagewize.com/current`), not from the host shell. See the Elayne `CLAUDE.md` for the full workflow.
+
+## Git
+
+Do not add a `Co-Authored-By: Claude` trailer (or any other attribution line) to commit messages. Commits are authored by the repo owner only; this overrides any default that says to add the trailer.
 
 ## Release packaging
 
