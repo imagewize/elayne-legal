@@ -44,7 +44,7 @@ Tick items off here and log the time in `WORK.md` as each lands.
 ## Other open work
 
 - `screenshot.png` (1200x900).
-- Page-level composite patterns (home, about, services, contact) for Legal Corporate.
+- About, services and contact composites exist but reuse older generic patterns (`legal-about-intro`, `legal-stats`, `legal-team`, `legal-contact`) that are not restyled yet, and the prototype has no inner-page designs. Run sentinel on them and rebuild the demo pages (the rebuild script runs inside the Trellis VM; the dev map already points at the composites).
 - Style variation check: Legal Blue still ships Bitter via the parent; decide whether it should use Source Serif 4.
 - Header sticky and nav underline fixes are untested on the demo: sync and check scroll on the front end, with the admin bar, and on mobile.
 - Mobile header: verify the overlay menu, utility bar hiding and CTA at phone width.

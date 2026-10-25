@@ -7,6 +7,7 @@ All notable changes to Elayne Legal are documented here. The format follows
 ## [Unreleased]
 
 ### Added
+- Page composites `page-legal-about`, `page-legal-services` and `page-legal-contact`: a navy page header plus the Legal Corporate sections, replacing the older per-page pattern lists.
 - Button hover states from the prototype (`legal-buttons.css`): gold darkens, navy deepens, outline fills navy, and the hero outline button turns white with navy text.
 - Header nav links get the gold underline on hover.
 
