@@ -6,6 +6,8 @@ All notable changes to Elayne Legal are documented here. The format follows
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-10-25
+
 ### Added
 - Page composites `page-legal-about`, `page-legal-services` and `page-legal-contact`: a navy page header plus the Legal Corporate sections, replacing the older per-page pattern lists.
 - Button hover states from the prototype (`legal-buttons.css`): gold darkens, navy deepens, outline fills navy, and the hero outline button turns white with navy text.
@@ -49,6 +51,6 @@ All notable changes to Elayne Legal are documented here. The format follows
 - Legal Client Reviews: `legal-testimonials` restyled to the prototype's three review cards (gold stars, serif quote, role and location) in native blocks, no extra CSS.
 - Practice areas: joined card grid with hover background, office chips on each card, and an office dropdown (the script swaps the native office buttons for a `<select>`; no `wp:html` block).
 - Dev tooling: sentinel (browser block validation) wired to the demo `/legal/` subsite through Trellis, plus `composer lint`, `composer wpcs:scan` and `composer wpcs:fix` for PHP outside `patterns/`. Documented in CLAUDE.md.
-- Legal services, about, stats, team, testimonials and contact patterns.
+- Legal about, stats, team, testimonials and contact patterns.
 - `render_block_data` filter that retargets the parent's `"theme":"elayne"` template-part references so the child's `parts/header.html` renders.
-- Bundled fonts: Source Serif 4, Open Sans and Mona Sans.
+- Bundled fonts: Source Serif 4 and Open Sans.
