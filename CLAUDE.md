@@ -10,7 +10,7 @@ Elayne Legal is a WordPress block (FSE) **child theme** of [Elayne](https://gith
 
 ## Commands
 
-- `composer check` runs `pt-cli check patterns/ --theme=elayne`, the Elayne pattern compliance checker (the "Pass 1/2/3" referred to in STATUS). It needs `composer install` first (pt-cli is a dev dependency, installed to `vendor/`). STATUS notes it historically ran from the Elayne repo.
+- `composer check` runs `pt-cli check patterns/ --theme=elayne`, the Elayne pattern compliance checker (the "Pass 1/2/3" referred to in STATUS). It needs `composer install` first (pt-cli `^2.6` is a dev dependency, installed to `vendor/`) and runs from this repo.
 - `composer lint` (parallel-lint) and `composer wpcs:scan` / `composer wpcs:fix` (WordPress Coding Standards through phpcs/phpcbf) check the PHP outside `patterns/`, which in practice is `functions.php`. Patterns are block markup and are covered by `composer check` and sentinel instead. Run them after any `functions.php` change.
 - `npm install` then `npm run setup` installs sentinel (`@imwz/wp-pattern-sentinel`) and its Chromium. Sentinel opens each pattern in the Gutenberg editor of a real WordPress site and reports block validation errors and content mismatches that the PHP validators (`composer check`, `wp pattern validate`) cannot see, such as class order and missing `has-custom-font-size`. Run it from this repo against the `/legal/` subsite of the demo (the theme is active there; the database lives in the Trellis VM), letting sentinel read the login from Trellis:
 
@@ -35,7 +35,7 @@ Elayne Legal is a WordPress block (FSE) **child theme** of [Elayne](https://gith
   - `render_block` hook enqueues `assets/js/legal-practice-filter.js` only when a group with `is-style-legal-practice-areas` renders.
   - `render_block_data` hook rewrites `"theme":"elayne"` on `core/template-part` blocks to the active stylesheet. Parent templates hard-code that attribute (its checker requires it), and without the rewrite a child theme's parts render as unavailable. Re-test after each Elayne release.
 - **Text domain**: everything (functions and all patterns) uses `elayne-legal`; keep it that way in new patterns.
-- **Known checker gap**: `pt-cli check` passes `wp:image` blocks with `width` but no `;height:auto` in the `<img style>`, which the editor rejects (imagewize/pt-cli#16). Add `height:auto` by hand until that rule exists.
+- **Images**: `wp:image` blocks with `width` need `;height:auto` in the `<img style>` or the editor rejects them. pt-cli ^2.6 enforces this (`image-height-auto`, imagewize/pt-cli#16).
 
 ## Testing on the demo site
 
