@@ -10,7 +10,7 @@ Last updated: 2026-10-25. Version: 0.1.0 (unreleased). GitHub repo and Packagist
 |---|---|---|
 | Utility bar + site header | `legal-corporate-header` | Done. Matches design; passes Pass 1/2/3 and loads in the Site Editor. |
 | Hero with enquiry form + stats | `legal-hero-form` | Done. First section of `page-legal-home` and of the demo `/legal/` home. |
-| Services ticker | none | To do. Prototype has a scrolling services strip; Elayne has a ticker mechanism (`render_block` on a `core/group` className). Port as a child pattern. |
+| Services ticker | `legal-ticker` | Done. Editable list, duplicated into a scrolling track by a `render_block` filter; `legal-ticker` block style. |
 | Practice areas (tabs + location filter) | `legal-practice-areas` | Done, with `assets/js/legal-practice-filter.js`. |
 | What we do (departments) | none | To do. `legal-services` is the older card grid, not this design. |
 | Expertise band (navy, feature list) | none | To do. `legal-about-intro` and `legal-stats` are older designs; compare before reusing. |
@@ -22,11 +22,11 @@ Last updated: 2026-10-25. Version: 0.1.0 (unreleased). GitHub repo and Packagist
 
 ## Home page: what is left
 
-The prototype home has 10 sections; 6 are done (header, hero with form, practice areas, CTA strip, footer, plus the composite). Remaining: 5 pieces of work.
+The prototype home has 10 sections; 7 are done (header, hero with form, ticker, practice areas, CTA strip, footer, plus the composite). Remaining: 4 pieces of work.
 
 1. ~~`page-legal-home` composite~~ Done: hero, practice areas, reviews, CTA strip. Add each new section to it as it lands. Demo `legal` map (dev) re-pointed to the child patterns.
 2. ~~Gold CTA strip~~ Done.
-3. Services ticker (new, reuse Elayne's ticker mechanism).
+3. ~~Services ticker~~ Done.
 4. What we do / departments, 5 items (new).
 5. Offices, 3 items (new).
 6. Expertise band, navy with 4 feature points (new).
