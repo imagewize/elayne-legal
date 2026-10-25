@@ -6,6 +6,10 @@ All notable changes to Elayne Legal are documented here. The format follows
 
 ## [Unreleased]
 
+### Added
+- Button hover states from the prototype (`legal-buttons.css`): gold darkens, navy deepens, outline fills navy, and the hero outline button turns white with navy text.
+- Header nav links get the gold underline on hover.
+
 ### Changed
 - Hero: left column text and enquiry card are top-aligned like the prototype.
 - README logo is now the EOS Icons gavel (MIT) instead of the Codicons scales.

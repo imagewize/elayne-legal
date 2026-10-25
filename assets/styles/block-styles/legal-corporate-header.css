@@ -68,3 +68,14 @@
 .legal-corporate-header .legal-corporate-header-cta .wp-block-button__link {
 	font-family: var(--wp--preset--font-family--open-sans);
 }
+
+/* Nav links: gold underline on hover */
+.legal-corporate-header .wp-block-navigation .wp-block-navigation-item__content {
+	border-bottom: 1px solid transparent;
+	padding-block: 0.25rem;
+	transition: border-color 0.2s;
+}
+
+.legal-corporate-header .wp-block-navigation .wp-block-navigation-item__content:hover {
+	border-bottom-color: var(--wp--preset--color--primary-alt-accent);
+}

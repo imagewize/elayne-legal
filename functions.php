@@ -56,6 +56,17 @@ function register_block_styles() {
 		);
 	}
 
+	// Button hover states apply to every core/button, so they load with the block.
+	wp_enqueue_block_style(
+		'core/button',
+		array(
+			'handle' => 'elayne-legal-buttons',
+			'src'    => get_theme_file_uri( 'assets/styles/block-styles/legal-buttons.css' ),
+			'path'   => get_theme_file_path( 'assets/styles/block-styles/legal-buttons.css' ),
+			'ver'    => (string) filemtime( get_theme_file_path( 'assets/styles/block-styles/legal-buttons.css' ) ),
+		)
+	);
+
 	// The expertise band is a cover block that scopes its own selectors (class legal-expertise).
 	wp_enqueue_block_style(
 		'core/cover',
