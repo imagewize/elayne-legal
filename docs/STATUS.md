@@ -50,7 +50,6 @@ Tick items off here and log the time in `WORK.md` as each lands.
 - Footer: link targets are `#` placeholders; wire to real pages in the demo.
 - Prototype images are Unsplash and cannot ship; replace with CC0/GPL images in `patterns/images/legal/`, document them in the readme, then port photo-based sections.
 - Add `readme.txt` (WP.org style) and decide whether the child is listed on WP.org or distributed only via Packagist/GitHub.
-- Run `composer`-based check wiring for the child (`pt-cli check` runs from the Elayne repo today).
 - Deprecation: after v1.0.0, a branch in Elayne removes the bundled `legal-*` patterns and variations and adds a notice.
 
 ## Known issues and limits
@@ -58,4 +57,5 @@ Tick items off here and log the time in `WORK.md` as each lands.
 - Parent templates hard-code `"theme":"elayne"` on template-part blocks; the child retargets it on `render_block_data`. Re-test after every Elayne release.
 - Fonts: Source Serif 4 is the latin subset only; other scripts fall back to Georgia.
 - `plumbing-hero` (parent) fails editor validation (inline `margin-top:0`). Unrelated to this theme.
-- Tool gaps filed: pt-cli #16 (image `height:auto`), wp-cli-pattern-validate #1 (closing comment before `</div>`).
+- Compliance check: `composer check` runs `pt-cli check` here (pt-cli ^2.6, includes the `image-height-auto` rule from #16) and passes all patterns.
+- Tool gap still open: wp-cli-pattern-validate #1 (closing comment before `</div>`).
