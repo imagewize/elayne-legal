@@ -30,7 +30,7 @@ The prototype only designs the home page, so the inner pages are composites of t
 | Services | `page-legal-services` | `legal-departments`, `legal-practice-areas`, `legal-expertise-band`, `legal-cta-strip` |
 | Contact | `page-legal-contact` | `legal-contact`, `legal-offices`, `legal-cta-strip` |
 
-`legal-about-intro` and `legal-team` are restyled (no banner or H1 of their own; team cards are text-only). `legal-stats`, `legal-contact` and `legal-services` are still the older generic designs.
+`legal-about-intro` and `legal-team` are restyled (no banner or H1 of their own; team cards are text-only). `legal-stats` and `legal-contact` are restyled too (navy stats band; intro plus four detail cards). `legal-services` is the only older generic design left and is not used by a composite.
 
 ## Home page: what is left
 
@@ -56,9 +56,9 @@ Tick items off here and log the time in `WORK.md` as each lands.
 ## Other open work
 
 - `screenshot.png` (1200x900).
-- Restyle `legal-stats` and `legal-contact` (and decide whether `legal-services` goes) to Legal Corporate; the prototype has no inner-page designs, so this is our call.
+- Decide whether the older `legal-services` card grid goes or gets restyled; no composite uses it.
 - Page header is left-aligned at 1200px but the header bar is full width, so the logo sits further left than the content. Decide whether the header container should also be 1200px.
-- Look at the services and contact pages and the about page at desktop width; only the about page at phone width has been checked.
+- Checked at desktop width: contact page and the stats band on about. Still to look at: services page, and the rest of about, at desktop and phone width.
 - Style variation check: Legal Blue still ships Bitter via the parent; decide whether it should use Source Serif 4.
 - Mobile header: sticky, brand and hidden utility bar/CTA verified at 390px on dev; the overlay menu itself is still to check.
 - Footer: link targets are `#` placeholders; wire to real pages in the demo.

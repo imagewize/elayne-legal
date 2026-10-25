@@ -17,6 +17,7 @@ All notable changes to Elayne Legal are documented here. The format follows
 - Header is now sticky: the template-part wrapper sticks, since the inner header was as tall as its parent and could not (offset for the admin bar).
 
 ### Changed
+- `legal-stats` is now a navy band with gold serif figures and a gold rule, and `legal-contact` a short intro with an email button beside four detail cards (phone, email, office, hours). Both use the Legal Corporate eyebrow and serif headings; the contact pattern no longer needs parent icon images.
 - About intro and team patterns restyled to Legal Corporate (eyebrow, serif headings, bordered cards); the about intro no longer has its own banner and H1, so the page header is the only one.
 - Buttons match the prototype: 4px radius, `.7rem 1.25rem` padding, sentence-case Explore buttons in departments and CTA strip.
 - CTA strip is now a dark gold band with a white heading and one white "Book free consultation" button with an arrow.

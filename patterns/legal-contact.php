@@ -2,116 +2,95 @@
 /**
  * Title: Legal Contact Information
  * Slug: elayne/legal-contact
- * Description: Contact details for law firm with office location, phone, email, and hours
+ * Description: Contact block for law firms: short intro with an email button beside four detail cards (phone, email, office, hours), in the Legal Corporate style
  * Categories: elayne/legal, elayne/contact
- * Keywords: contact, legal, law firm, office, phone, email, hours, location
- * Viewport Width: 1200
+ * Keywords: contact, legal, law firm, phone, email, address, hours
+ * Viewport Width: 1440
  */
 ?>
-<!-- wp:group {"metadata":{"name":"Legal Contact Information","categories":["elayne/legal","elayne/contact"],"patternName":"elayne/legal-contact"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"tertiary","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull has-tertiary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--xx-large);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","right":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large","left":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|large"}},"backgroundColor":"base","layout":{"type":"default"}} -->
-	<div class="wp-block-group alignwide has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--x-large)"><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|xx-large","left":"var:preset|spacing|xx-large"}}}} -->
-		<div class="wp-block-columns"><!-- wp:column {"width":"40%","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium"}}}} -->
-			<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);flex-basis:40%"><!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontSize":"large"} -->
-				<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Schedule a Consultation', 'elayne-legal' ); ?></h3>
-				<!-- /wp:heading -->
+<!-- wp:group {"metadata":{"categories":["elayne/legal","elayne/contact"],"patternName":"elayne/legal-contact","name":"Legal Contact Information"},"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}},"backgroundColor":"secondary","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull has-secondary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--xx-large);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:group {"layout":{"type":"constrained","contentSize":"1200px"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|large"}},"layout":{"type":"grid","minimumColumnWidth":"30rem"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"constrained","contentSize":"36rem","justifyContent":"left"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"legal-eyebrow","textColor":"primary-alt-accent","fontSize":"x-small"} -->
+<p class="legal-eyebrow has-primary-alt-accent-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Get in touch', 'elayne-legal' ); ?></p>
+<!-- /wp:paragraph -->
 
-				<!-- wp:paragraph {"textColor":"main-accent"} -->
-				<p class="has-main-accent-color has-text-color"><?php esc_html_e( 'Contact us today to discuss your legal needs. We offer free initial consultations for most practice areas.', 'elayne-legal' ); ?></p>
-				<!-- /wp:paragraph -->
+<!-- wp:heading {"fontSize":"medium"} -->
+<h2 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Tell us about your matter.', 'elayne-legal' ); ?></h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
 
-				<!-- wp:buttons -->
-				<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary","textColor":"base"} -->
-					<div class="wp-block-button"><a class="wp-block-button__link has-base-color has-primary-background-color has-text-color has-background wp-element-button"><?php esc_html_e( 'Contact Us Today', 'elayne-legal' ); ?></a></div>
-					<!-- /wp:button -->
-				</div>
-				<!-- /wp:buttons -->
-			</div>
-			<!-- /wp:column -->
+<!-- wp:paragraph {"textColor":"main-accent","fontSize":"base"} -->
+<p class="has-main-accent-color has-text-color has-base-font-size"><?php esc_html_e( 'Contact us to discuss your legal needs. The first consultation is free for most practice areas, and a lawyer will reply within one working day.', 'elayne-legal' ); ?></p>
+<!-- /wp:paragraph -->
 
-			<!-- wp:column {"width":"60%","style":{"spacing":{"blockGap":"var:preset|spacing|medium"}}} -->
-			<div class="wp-block-column" style="flex-basis:60%"><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
-				<div class="wp-block-columns"><!-- wp:column -->
-					<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
-						<div class="wp-block-group has-tertiary-background-color has-background" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:image {"width":"32px","sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-							<figure class="wp-block-image size-full is-resized is-style-default"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/icon-phone.svg" alt="" style="width:32px;height:auto"/></figure>
-							<!-- /wp:image -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary-alt-accent","textColor":"base","style":{"border":{"radius":"var:preset|border-radius|sm","width":"0px"},"typography":{"fontSize":"var:preset|font-size|small"}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-base-color has-primary-alt-accent-background-color has-text-color has-background has-custom-font-size wp-element-button" href="mailto:example@example.com" style="border-width:0px;border-radius:var(--wp--preset--border-radius--sm);font-size:var(--wp--preset--font-size--small)"><?php esc_html_e( 'Email us', 'elayne-legal' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
 
-							<!-- wp:heading {"level":4,"style":{"typography":{"fontWeight":"600"}}} -->
-							<h4 class="wp-block-heading" style="font-weight:600"><?php esc_html_e( 'Phone', 'elayne-legal' ); ?></h4>
-							<!-- /wp:heading -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"grid","minimumColumnWidth":"14rem"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|2-x-small"},"border":{"radius":"6px","width":"1px"}},"backgroundColor":"base","borderColor":"border-light","layout":{"type":"default"}} -->
+<div class="wp-block-group has-border-color has-border-light-border-color has-base-background-color has-background" style="border-width:1px;border-radius:6px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph {"className":"legal-eyebrow","textColor":"primary-alt-accent","fontSize":"x-small"} -->
+<p class="legal-eyebrow has-primary-alt-accent-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Phone', 'elayne-legal' ); ?></p>
+<!-- /wp:paragraph -->
 
-							<!-- wp:paragraph {"fontSize":"small"} -->
-							<p class="has-small-font-size"><?php esc_html_e( '(555) 123-4567', 'elayne-legal' ); ?></p>
-							<!-- /wp:paragraph -->
-						</div>
-						<!-- /wp:group -->
-					</div>
-					<!-- /wp:column -->
+<!-- wp:paragraph {"textColor":"primary","fontFamily":"serif","fontSize":"base"} -->
+<p class="has-primary-color has-text-color has-serif-font-family has-base-font-size"><?php esc_html_e( '+31 20 210 31 38', 'elayne-legal' ); ?></p>
+<!-- /wp:paragraph -->
 
-					<!-- wp:column -->
-					<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
-						<div class="wp-block-group has-tertiary-background-color has-background" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:image {"width":"32px","sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-							<figure class="wp-block-image size-full is-resized is-style-default"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/icon-email.svg" alt="" style="width:32px;height:auto"/></figure>
-							<!-- /wp:image -->
+<!-- wp:paragraph {"textColor":"main-accent","fontSize":"small"} -->
+<p class="has-main-accent-color has-text-color has-small-font-size"><?php esc_html_e( 'Mon–Fri 8:30–18:00', 'elayne-legal' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-							<!-- wp:heading {"level":4,"style":{"typography":{"fontWeight":"600"}}} -->
-							<h4 class="wp-block-heading" style="font-weight:600"><?php esc_html_e( 'Email', 'elayne-legal' ); ?></h4>
-							<!-- /wp:heading -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|2-x-small"},"border":{"radius":"6px","width":"1px"}},"backgroundColor":"base","borderColor":"border-light","layout":{"type":"default"}} -->
+<div class="wp-block-group has-border-color has-border-light-border-color has-base-background-color has-background" style="border-width:1px;border-radius:6px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph {"className":"legal-eyebrow","textColor":"primary-alt-accent","fontSize":"x-small"} -->
+<p class="legal-eyebrow has-primary-alt-accent-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Email', 'elayne-legal' ); ?></p>
+<!-- /wp:paragraph -->
 
-							<!-- wp:paragraph {"fontSize":"small"} -->
-							<p class="has-small-font-size"><?php esc_html_e( 'example@example.com', 'elayne-legal' ); ?></p>
-							<!-- /wp:paragraph -->
-						</div>
-						<!-- /wp:group -->
-					</div>
-					<!-- /wp:column -->
-				</div>
-				<!-- /wp:columns -->
+<!-- wp:paragraph {"textColor":"primary","fontFamily":"serif","fontSize":"base"} -->
+<p class="has-primary-color has-text-color has-serif-font-family has-base-font-size"><?php esc_html_e( 'example@example.com', 'elayne-legal' ); ?></p>
+<!-- /wp:paragraph -->
 
-				<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
-				<div class="wp-block-columns"><!-- wp:column -->
-					<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
-						<div class="wp-block-group has-tertiary-background-color has-background" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:image {"width":"32px","sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-							<figure class="wp-block-image size-full is-resized is-style-default"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/icon-location.svg" alt="" style="width:32px;height:auto"/></figure>
-							<!-- /wp:image -->
+<!-- wp:paragraph {"textColor":"main-accent","fontSize":"small"} -->
+<p class="has-main-accent-color has-text-color has-small-font-size"><?php esc_html_e( 'Reply within one working day', 'elayne-legal' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-							<!-- wp:heading {"level":4,"style":{"typography":{"fontWeight":"600"}}} -->
-							<h4 class="wp-block-heading" style="font-weight:600"><?php esc_html_e( 'Office Location', 'elayne-legal' ); ?></h4>
-							<!-- /wp:heading -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|2-x-small"},"border":{"radius":"6px","width":"1px"}},"backgroundColor":"base","borderColor":"border-light","layout":{"type":"default"}} -->
+<div class="wp-block-group has-border-color has-border-light-border-color has-base-background-color has-background" style="border-width:1px;border-radius:6px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph {"className":"legal-eyebrow","textColor":"primary-alt-accent","fontSize":"x-small"} -->
+<p class="legal-eyebrow has-primary-alt-accent-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Office', 'elayne-legal' ); ?></p>
+<!-- /wp:paragraph -->
 
-							<!-- wp:paragraph {"fontSize":"small"} -->
-							<p class="has-small-font-size"><?php esc_html_e( '123 Main Street, Suite 200', 'elayne-legal' ); ?><br><?php esc_html_e( 'Downtown, ST 12345', 'elayne-legal' ); ?></p>
-							<!-- /wp:paragraph -->
-						</div>
-						<!-- /wp:group -->
-					</div>
-					<!-- /wp:column -->
+<!-- wp:paragraph {"textColor":"primary","fontFamily":"serif","fontSize":"base"} -->
+<p class="has-primary-color has-text-color has-serif-font-family has-base-font-size"><?php esc_html_e( 'Example Avenue 100', 'elayne-legal' ); ?></p>
+<!-- /wp:paragraph -->
 
-					<!-- wp:column -->
-					<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
-						<div class="wp-block-group has-tertiary-background-color has-background" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:image {"width":"32px","sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-							<figure class="wp-block-image size-full is-resized is-style-default"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/icon-clock.svg" alt="" style="width:32px;height:auto"/></figure>
-							<!-- /wp:image -->
+<!-- wp:paragraph {"textColor":"main-accent","fontSize":"small"} -->
+<p class="has-main-accent-color has-text-color has-small-font-size"><?php esc_html_e( '1000 AA Amsterdam', 'elayne-legal' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-							<!-- wp:heading {"level":4,"style":{"typography":{"fontWeight":"600"}}} -->
-							<h4 class="wp-block-heading" style="font-weight:600"><?php esc_html_e( 'Office Hours', 'elayne-legal' ); ?></h4>
-							<!-- /wp:heading -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|2-x-small"},"border":{"radius":"6px","width":"1px"}},"backgroundColor":"base","borderColor":"border-light","layout":{"type":"default"}} -->
+<div class="wp-block-group has-border-color has-border-light-border-color has-base-background-color has-background" style="border-width:1px;border-radius:6px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph {"className":"legal-eyebrow","textColor":"primary-alt-accent","fontSize":"x-small"} -->
+<p class="legal-eyebrow has-primary-alt-accent-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Hours', 'elayne-legal' ); ?></p>
+<!-- /wp:paragraph -->
 
-							<!-- wp:paragraph {"fontSize":"small"} -->
-							<p class="has-small-font-size"><?php esc_html_e( 'Mon-Fri: 9:00 AM - 5:00 PM', 'elayne-legal' ); ?><br><?php esc_html_e( 'Evenings by appointment', 'elayne-legal' ); ?></p>
-							<!-- /wp:paragraph -->
-						</div>
-						<!-- /wp:group -->
-					</div>
-					<!-- /wp:column -->
-				</div>
-				<!-- /wp:columns -->
-			</div>
-			<!-- /wp:column -->
-		</div>
-		<!-- /wp:columns -->
-	</div>
-	<!-- /wp:group -->
+<!-- wp:paragraph {"textColor":"primary","fontFamily":"serif","fontSize":"base"} -->
+<p class="has-primary-color has-text-color has-serif-font-family has-base-font-size"><?php esc_html_e( 'Mon–Fri 8:30–18:00', 'elayne-legal' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"main-accent","fontSize":"small"} -->
+<p class="has-main-accent-color has-text-color has-small-font-size"><?php esc_html_e( 'Evenings by appointment', 'elayne-legal' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 </div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
