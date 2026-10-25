@@ -2,7 +2,7 @@
 
 Working notes, excluded from the release zip and source archives (see `.distignore` and `.gitattributes`).
 Design source: `~/Documents/elayne-content/legal-corporate/` (private `elayne-content` repo). Time log: `~/Documents/elayne-content/WORK.md`.
-Last updated: 2026-10-25. Version: 0.1.0 (unreleased). GitHub repo (`imagewize/elayne-legal`) exists; the Packagist entry is created when v1.0.0 is ready.
+Last updated: 2026-10-25 (header fixes, inner-page composites, team and about restyle, demo portraits). Version: 0.1.0 (unreleased). GitHub repo (`imagewize/elayne-legal`) exists; the Packagist entry is created when v1.0.0 is ready.
 
 ## Prototype sections vs. child theme
 
@@ -19,6 +19,18 @@ Last updated: 2026-10-25. Version: 0.1.0 (unreleased). GitHub repo (`imagewize/e
 | Gold CTA strip | `legal-cta-strip` | Done. Gold band, headline, two buttons; no extra CSS. |
 | Footer | `legal-corporate-footer` | Done. Brand block, three link columns, disclaimer bar. |
 | Team | `legal-team` | Restyled to Legal Corporate, text-only. The demo adds three Unsplash portraits (`elayne-content/legal-corporate/images/portrait-*.jpg`) through `rebuild-demo-subsite.php`. |
+
+## Inner pages
+
+The prototype only designs the home page, so the inner pages are composites of the Legal Corporate sections under a shared navy page header (eyebrow, serif H1, one line; left-aligned in the 1200px container). Each is a thin file of `wp:pattern` references plus the inline header group. All pass `composer check` and sentinel, and the demo dev pages 6-8 are rebuilt from them.
+
+| Page | Composite | Sections after the header |
+|---|---|---|
+| About | `page-legal-about` | `legal-about-intro`, `legal-stats`, `legal-team`, `legal-offices`, `legal-cta-strip` |
+| Services | `page-legal-services` | `legal-departments`, `legal-practice-areas`, `legal-expertise-band`, `legal-cta-strip` |
+| Contact | `page-legal-contact` | `legal-contact`, `legal-offices`, `legal-cta-strip` |
+
+`legal-about-intro` and `legal-team` are restyled (no banner or H1 of their own; team cards are text-only). `legal-stats`, `legal-contact` and `legal-services` are still the older generic designs.
 
 ## Home page: what is left
 
@@ -38,17 +50,20 @@ Tick items off here and log the time in `WORK.md` as each lands.
 
 `legal-hero-form` is the prototype hero and is the first section of `page-legal-home`. The demo `/legal/` home (post 5) is built from the child patterns on dev. To do:
 - `hero-cover-slanted-legal` was dropped (removed from the child).
-- Update the prod map in `rebuild-demo-subsite.php` (already edited, not yet run on prod) and add `legal-corporate-footer` to its `template_parts`.
-- The services, about and contact demo pages still use the older patterns.
+- Run the prod rebuild (map already edited, not yet run on prod; needs the media uploads above) and add `legal-corporate-footer` to its `template_parts`.
+- The demo services, about and contact pages are rebuilt from the page composites on dev (not yet on prod).
 
 ## Other open work
 
 - `screenshot.png` (1200x900).
-- About, services and contact composites exist but reuse older generic patterns (`legal-about-intro`, `legal-stats`, `legal-team`, `legal-contact`) that are not restyled yet, and the prototype has no inner-page designs. Run sentinel on them and rebuild the demo pages (the rebuild script runs inside the Trellis VM; the dev map already points at the composites).
+- Restyle `legal-stats` and `legal-contact` (and decide whether `legal-services` goes) to Legal Corporate; the prototype has no inner-page designs, so this is our call.
+- Page header is left-aligned at 1200px but the header bar is full width, so the logo sits further left than the content. Decide whether the header container should also be 1200px.
+- Look at the services and contact pages and the about page at desktop width; only the about page at phone width has been checked.
 - Style variation check: Legal Blue still ships Bitter via the parent; decide whether it should use Source Serif 4.
-- Header sticky and nav underline fixes are untested on the demo: sync and check scroll on the front end, with the admin bar, and on mobile.
-- Mobile header: verify the overlay menu, utility bar hiding and CTA at phone width.
+- Mobile header: sticky, brand and hidden utility bar/CTA verified at 390px on dev; the overlay menu itself is still to check.
 - Footer: link targets are `#` placeholders; wire to real pages in the demo.
+- Demo-only photos: `band.jpg` and `portrait-1..3.jpg` live in `elayne-content/legal-corporate/images/` (credits in `CREDITS.md`) and are uploaded to the dev `/legal/` media library; `rebuild-demo-subsite.php` places them (`$pattern_images`, `$pattern_portraits`) and expands `wp:pattern` references in composites. Import them into the prod media library before a prod rebuild.
+- Uncommitted outside this repo: the rebuild script changes in `imagewize.com`, and the portraits, credits, manifest and `WORK.md` in `elayne-content`.
 - Prototype images are Unsplash and cannot ship; replace with CC0/GPL images in `patterns/images/legal/`, document them in the readme, then port photo-based sections.
 - Add `readme.txt` (WP.org style) and decide whether the child is listed on WP.org or distributed only via Packagist/GitHub.
 - Deprecation: after v1.0.0, a branch in Elayne removes the bundled `legal-*` patterns and variations and adds a notice.
