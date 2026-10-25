@@ -1,0 +1,25 @@
+# Directories (need /* suffix for zip -x@ to exclude recursively)
+.git/*
+.github/*
+.claude/*
+vendor/*
+node_modules/*
+docs/*
+.tmp/*
+
+# Development files
+.DS_Store
+.gitignore
+.gitattributes
+.distignore
+.env
+.env.*
+composer.json
+composer.lock
+package.json
+package-lock.json
+sentinel-*.log.json
+.sentinel-cache.json
+
+# Documentation
+README.md
