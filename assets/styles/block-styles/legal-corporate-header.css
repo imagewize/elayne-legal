@@ -8,6 +8,18 @@
 	z-index: 30;
 }
 
+/* Sticky only works against a tall parent, and the template-part wrapper is
+   exactly as tall as the header, so the wrapper has to stick instead. */
+.wp-block-template-part:has(> .legal-corporate-header) {
+	position: sticky;
+	top: 0;
+	z-index: 30;
+}
+
+.admin-bar .wp-block-template-part:has(> .legal-corporate-header) {
+	top: var(--wp-admin--admin-bar--height, 0);
+}
+
 .legal-corporate-header .legal-corporate-utility {
 	letter-spacing: 0.02em;
 }
@@ -68,6 +80,7 @@
 /* Nav links: gold underline on hover */
 .legal-corporate-header .wp-block-navigation .wp-block-navigation-item__content {
 	border-bottom: 1px solid transparent;
+	text-decoration: none;
 	padding-block: 0.25rem;
 	transition: border-color 0.2s;
 }

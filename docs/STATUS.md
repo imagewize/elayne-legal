@@ -46,6 +46,7 @@ Tick items off here and log the time in `WORK.md` as each lands.
 - `screenshot.png` (1200x900).
 - Page-level composite patterns (home, about, services, contact) for Legal Corporate.
 - Style variation check: Legal Blue still ships Bitter via the parent; decide whether it should use Source Serif 4.
+- Header sticky and nav underline fixes are untested on the demo: sync and check scroll on the front end, with the admin bar, and on mobile.
 - Mobile header: verify the overlay menu, utility bar hiding and CTA at phone width.
 - Footer: link targets are `#` placeholders; wire to real pages in the demo.
 - Prototype images are Unsplash and cannot ship; replace with CC0/GPL images in `patterns/images/legal/`, document them in the readme, then port photo-based sections.
