@@ -10,9 +10,9 @@
 ?>
 <!-- wp:group {"metadata":{"categories":["elayne/hero","elayne/legal"],"patternName":"elayne/legal-hero-form","name":"Legal Hero with Enquiry Form"},"align":"full","className":"is-style-legal-corporate-hero","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}},"backgroundColor":"primary","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull is-style-legal-corporate-hero has-primary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--xx-large);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:group {"layout":{"type":"constrained","contentSize":"1200px"}} -->
-<div class="wp-block-group"><!-- wp:columns {"verticalAlignment":"center"} -->
-<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"58%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:58%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:columns {"verticalAlignment":"top"} -->
+<div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column {"verticalAlignment":"top","width":"58%"} -->
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:58%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"legal-hero-eyebrow","textColor":"primary-accent","fontSize":"x-small"} -->
 <p class="legal-hero-eyebrow has-primary-accent-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Business · Property · Family · Disputes', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph -->
@@ -79,8 +79,8 @@
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"42%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:42%"><!-- wp:group {"className":"legal-hero-form-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"},"border":{"radius":"var:preset|border-radius|sm"}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
+<!-- wp:column {"verticalAlignment":"top","width":"42%"} -->
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:42%"><!-- wp:group {"className":"legal-hero-form-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"},"border":{"radius":"var:preset|border-radius|sm"}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
 <div id="enquiry" class="wp-block-group legal-hero-form-card has-base-background-color has-background" style="border-radius:var(--wp--preset--border-radius--sm);padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:heading {"textColor":"primary","fontSize":"medium"} -->
 <h2 class="wp-block-heading has-primary-color has-text-color has-medium-font-size"><?php esc_html_e( 'Request a free consultation', 'elayne-legal' ); ?></h2>
 <!-- /wp:heading -->
