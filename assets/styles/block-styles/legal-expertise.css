@@ -31,7 +31,7 @@
 	gap: var(--wp--preset--spacing--2-x-small);
 	align-content: start;
 	padding: var(--wp--preset--spacing--medium);
-	background: rgb(11 22 40 / 0.85);
+	background: color-mix(in srgb, var(--wp--preset--color--primary-alt) 85%, transparent);
 }
 
 .legal-expertise .legal-feat > * {

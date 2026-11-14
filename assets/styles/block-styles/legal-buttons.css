@@ -18,14 +18,14 @@
 	line-height: 1.2;
 }
 
-/* Gold fill: darker gold */
+/* Gold fill: darker gold (accent is the deep gold in both legal variations) */
 .wp-block-button__link.has-primary-alt-accent-background-color:hover {
-	--wp--preset--color--primary-alt-accent: #7f6424;
+	--wp--preset--color--primary-alt-accent: var(--wp--preset--color--accent, #7f6424);
 }
 
 /* Gold fill with dark text (Tailored Services card): darker gold, white text */
 .wp-block-button__link.has-primary-accent-background-color:hover {
-	--wp--preset--color--primary-accent: #7f6424;
+	--wp--preset--color--primary-accent: var(--wp--preset--color--accent, #7f6424);
 	--wp--preset--color--primary-alt: var(--wp--preset--color--base);
 }
 
