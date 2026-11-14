@@ -15,6 +15,10 @@ All notable changes to Elayne Legal are documented here. The format follows
   its own golds (`#8A6A12` / `#C9A85A`), with the accent darkened to pass WCAG AA on white.
 
 ### Fixed
+- Block-style CSS passes Elayne's colour contract check (which now covers CSS): the gold button
+  hovers use the variation's `accent` (deep gold, falling back to the old `#7f6424` on sites whose
+  saved global styles predate it), and the expertise cards use `primary-alt` at 85% instead of a
+  literal navy.
 - The corporate footer's divider was a hard-coded `rgba(255,255,255,0.1)` border in the pattern; it
   is now a 10% tint of the footer text colour in `legal-corporate-footer.css`.
 
