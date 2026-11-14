@@ -6,6 +6,15 @@ All notable changes to Elayne Legal are documented here. The format follows
 
 ## [Unreleased]
 
+### Added
+- `on-primary` palette slug in Legal Blue and Legal Corporate, for Elayne's colour contract: the
+  text colour on a `primary` background (both use their `base`). A child variation replaces
+  Elayne's palette, so it must define every contract slug itself.
+
+### Fixed
+- The corporate footer's divider was a hard-coded `rgba(255,255,255,0.1)` border in the pattern; it
+  is now a 10% tint of the footer text colour in `legal-corporate-footer.css`.
+
 ## [1.0.0] - 2026-10-25
 
 ### Added
