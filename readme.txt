@@ -4,7 +4,7 @@ Tags: block-patterns, full-site-editing, custom-colors, editor-style, law-firm, 
 Requires at least: 7.0
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GNU General Public License v3.0 (or later)
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -74,6 +74,10 @@ The hero embeds a Contact Form 7 form (form ID 1, editable in the shortcode bloc
 Yes, though the sections are designed for Legal Corporate and look best with it.
 
 == Changelog ==
+
+= 1.1.0 =
+* Added: on-primary, accent and accent-light palette colours in Legal Corporate and Legal Blue, which Elayne 4.12's colour contract requires of every variation.
+* Fixed: block-style CSS and the corporate footer divider use palette colours instead of hard-coded values, so they pass Elayne's colour check.
 
 = 1.0.0 =
 * First release: Legal Corporate and Legal Blue style variations, two-bar header, hero with enquiry form, services ticker, filterable practice areas, departments, expertise band, offices, reviews, team, stats, contact, CTA strip, footer, and Home, About, Services and Contact page patterns.

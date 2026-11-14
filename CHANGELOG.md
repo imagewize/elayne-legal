@@ -6,6 +6,8 @@ All notable changes to Elayne Legal are documented here. The format follows
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-14
+
 ### Added
 - `on-primary` palette slug in Legal Blue and Legal Corporate, for Elayne's colour contract: the
   text colour on a `primary` background (both use their `base`). A child variation replaces
