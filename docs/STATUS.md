@@ -2,7 +2,7 @@
 
 Working notes, excluded from the release zip and source archives (see `.distignore` and `.gitattributes`).
 Design source: `~/Documents/elayne-content/legal-corporate/` (private `elayne-content` repo). Time log: `~/Documents/elayne-content/WORK.md`.
-Last updated: 2026-10-25 (header fixes, inner-page composites, team and about restyle, demo portraits). Version: 1.0.0 (ready to tag). GitHub repo (`imagewize/elayne-legal`) exists; the Packagist entry is created when v1.0.0 is ready.
+Last updated: 2026-10-25 (header fixes, inner-page composites, team and about restyle, demo portraits). Version: 1.1.0 (colour contract, 2026-11-14). GitHub repo `imagewize/elayne-legal` and Packagist entry exist.
 
 ## Prototype sections vs. child theme
 
