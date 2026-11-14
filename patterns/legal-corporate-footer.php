@@ -96,8 +96,8 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"wide","className":"legal-corporate-footer-bottom","style":{"spacing":{"padding":{"top":"var:preset|spacing|small"},"blockGap":"var:preset|spacing|small"},"border":{"top":{"color":"rgba(255,255,255,0.1)","width":"1px"}}},"fontSize":"xx-small","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide legal-corporate-footer-bottom has-xx-small-font-size" style="border-top-color:rgba(255,255,255,0.1);border-top-width:1px;padding-top:var(--wp--preset--spacing--small)"><!-- wp:paragraph {"fontSize":"xx-small"} -->
+<!-- wp:group {"align":"wide","className":"legal-corporate-footer-bottom","style":{"spacing":{"padding":{"top":"var:preset|spacing|small"},"blockGap":"var:preset|spacing|small"}},"fontSize":"xx-small","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide legal-corporate-footer-bottom has-xx-small-font-size" style="padding-top:var(--wp--preset--spacing--small)"><!-- wp:paragraph {"fontSize":"xx-small"} -->
 <p class="has-xx-small-font-size"><?php esc_html_e( '© 2026 Legal Services Demo · Powered by WordPress and Elayne', 'elayne-legal' ); ?></p>
 <!-- /wp:paragraph -->
 

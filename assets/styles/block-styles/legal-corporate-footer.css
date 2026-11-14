@@ -46,3 +46,9 @@
 .legal-corporate-footer a:hover {
 	color: var(--wp--preset--color--base);
 }
+
+/* Divider above the footer's bottom row: a tint of the footer text, so it follows
+   the footer colours of any style variation. */
+.legal-corporate-footer-bottom {
+	border-top: 1px solid color-mix(in srgb, currentColor 10%, transparent);
+}
