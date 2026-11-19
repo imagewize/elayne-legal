@@ -1,0 +1,31 @@
+name: Create theme release
+
+on:
+  release:
+    types: [published, edited]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v7
+
+    # WordPress names the theme folder after the zip's top-level directory. Since 7.1.4 it unpacks
+    # an upload into <zip name>-<16 random characters>, and a flat zip (files at the root) keeps
+    # that random name as the theme folder. Wrap everything in a single <repo>/ folder.
+    - name: Zip Folder
+      env:
+        NAME: ${{ github.event.repository.name }}
+      run: |
+        zip -qr "$RUNNER_TEMP/flat.zip" . -x@.distignore
+        mkdir -p "$RUNNER_TEMP/pkg/$NAME"
+        unzip -q "$RUNNER_TEMP/flat.zip" -d "$RUNNER_TEMP/pkg/$NAME"
+        (cd "$RUNNER_TEMP/pkg" && zip -qr "$GITHUB_WORKSPACE/$NAME.zip" "$NAME")
+
+    - name: Release
+      uses: softprops/action-gh-release@v3
+      with:
+        files: ${{ github.event.repository.name }}.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
