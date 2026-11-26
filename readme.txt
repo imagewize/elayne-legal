@@ -1,10 +1,10 @@
 === Elayne Legal ===
 Contributors: Rhand
 Tags: block-patterns, full-site-editing, custom-colors, editor-style, law-firm, legal, translation-ready, wide-blocks
-Requires at least: 7.0
-Tested up to: 7.1
+Requires at least: 7.1
+Tested up to: 7.2
 Requires PHP: 8.0
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GNU General Public License v3.0 (or later)
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -74,6 +74,9 @@ The hero embeds a Contact Form 7 form (form ID 1, editable in the shortcode bloc
 Yes, though the sections are designed for Legal Corporate and look best with it.
 
 == Changelog ==
+
+= 1.1.1 =
+* CHANGED: Tested up to WordPress 7.2 (tested on 7.2-RC3 on the demo `/legal/` subsite with parent Elayne 4.15.0: Sentinel 18/18, front end and Site Editor clean). Requires at least raised to 7.1, matching Elayne 4.15.0.
 
 = 1.1.0 =
 * Added: on-primary, accent and accent-light palette colours in Legal Corporate and Legal Blue, which Elayne 4.12's colour contract requires of every variation.

@@ -6,6 +6,12 @@ All notable changes to Elayne Legal are documented here. The format follows
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-11-26
+
+### Changed
+- Tested up to WordPress 7.2 (tested on 7.2-RC3 on the demo `/legal/` subsite with parent Elayne 4.15.0: lint/wpcs/pt-cli clean, Sentinel 18/18, front end of all four pages, Site Editor 0 invalid blocks, both style variations registered, `debug.log` clean).
+- Requires at least raised 7.0 → 7.1, matching the Elayne 4.15.0 parent requirement.
+
 ## [1.1.0] - 2026-11-14
 
 ### Added
