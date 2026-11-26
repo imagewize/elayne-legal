@@ -5,6 +5,7 @@
 vendor/*
 node_modules/*
 docs/*
+tests/*
 .tmp/*
 
 # Development files
@@ -23,3 +24,5 @@ sentinel-*.log.json
 
 # Documentation
 README.md
+AGENTS.md
+CLAUDE.md
